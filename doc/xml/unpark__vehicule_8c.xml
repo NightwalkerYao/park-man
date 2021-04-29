@@ -1,0 +1,516 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="unpark__vehicule_8c" kind="file" language="C++">
+    <compoundname>unpark_vehicule.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">sqlite3.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">time.h</includes>
+    <includes refid="sqlite3__client_8h" local="yes">../include/sqlite3_client.h</includes>
+    <includes refid="unpark__vehicule_8h" local="yes">../include/unpark_vehicule.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>../include/sqlite3_client.h</label>
+        <link refid="sqlite3__client_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>../include/unpark_vehicule.h</label>
+        <link refid="unpark__vehicule_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/unpark_vehicule.c</label>
+        <link refid="unpark__vehicule_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sqlite3.h</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+      </node>
+      <node id="6">
+        <label>time.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="unpark__vehicule_8c_1a5c93052e0f3e5f0e518e34aff34a0315" prot="public" static="no">
+        <name>_UNPARK_VEHICLE_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unpark_vehicule.c" line="10" column="9" bodyfile="src/unpark_vehicule.c" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="unpark__vehicule_8c_1a4d8cb59749f3c45cb059c431d7fe0015" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char parking_code[20]</definition>
+        <argsstring>[20]</argsstring>
+        <name>parking_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unpark_vehicule.c" line="12" column="6" bodyfile="src/unpark_vehicule.c" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8c_1aece673c2c99f3121f07ae6d1352a87ed" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int vehicle_id</definition>
+        <argsstring></argsstring>
+        <name>vehicle_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unpark_vehicule.c" line="13" column="14" bodyfile="src/unpark_vehicule.c" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8c_1a81563164bd30213becd02a2287c2b46f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char date_arrivee[30]</definition>
+        <argsstring>[30]</argsstring>
+        <name>date_arrivee</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unpark_vehicule.c" line="14" column="6" bodyfile="src/unpark_vehicule.c" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8c_1a7faeb62680eb67042dfff3997daeadf0" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char date_sortie[30]</definition>
+        <argsstring>[30]</argsstring>
+        <name>date_sortie</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unpark_vehicule.c" line="15" column="6" bodyfile="src/unpark_vehicule.c" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8c_1a0b1bf0b5477d4169420aa253289439a3" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int vehicle_count</definition>
+        <argsstring></argsstring>
+        <name>vehicle_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unpark_vehicule.c" line="16" column="14" bodyfile="src/unpark_vehicule.c" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8c_1a7dedc33fab2cf416a7bc806d12ba5c7f" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int parking_fees</definition>
+        <argsstring></argsstring>
+        <name>parking_fees</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unpark_vehicule.c" line="17" column="14" bodyfile="src/unpark_vehicule.c" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8c_1ac7863d04cd21f96c24bd62c2ee119b3c" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char matricule[15]</definition>
+        <argsstring>[15]</argsstring>
+        <name>matricule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unpark_vehicule.c" line="18" column="6" bodyfile="src/unpark_vehicule.c" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8c_1a0af1ce64b9bf090b86a066728c9e64fe" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char client[160]</definition>
+        <argsstring>[160]</argsstring>
+        <name>client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unpark_vehicule.c" line="19" column="6" bodyfile="src/unpark_vehicule.c" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8c_1a1ecaa681517f32b13670090d5bc6ad4e" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char libelle_type[100]</definition>
+        <argsstring>[100]</argsstring>
+        <name>libelle_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unpark_vehicule.c" line="20" column="6" bodyfile="src/unpark_vehicule.c" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8c_1a868a41ece38d5d51819e2527a256579e" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int tarif_heure</definition>
+        <argsstring></argsstring>
+        <name>tarif_heure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unpark_vehicule.c" line="21" column="14" bodyfile="src/unpark_vehicule.c" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8c_1a5c6a079f8b2d7edea433d84b0e83acc6" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int tarif_24</definition>
+        <argsstring></argsstring>
+        <name>tarif_24</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unpark_vehicule.c" line="22" column="14" bodyfile="src/unpark_vehicule.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8c_1a607ea88e24e4e7d0462b9653bd63e323" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int duree</definition>
+        <argsstring></argsstring>
+        <name>duree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unpark_vehicule.c" line="23" column="14" bodyfile="src/unpark_vehicule.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="unpark__vehicule_8c_1ab6f02fa3242376ca63e01c1b670d0d5e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int callback_unpark</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>callback_unpark</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unpark_vehicule.c" line="26" column="12" bodyfile="src/unpark_vehicule.c" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="unpark__vehicule_8c_1ab94712b764d11cd859c1097c0c7b0d84" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int callback_count_vehicle</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>callback_count_vehicle</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unpark_vehicule.c" line="30" column="12" bodyfile="src/unpark_vehicule.c" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="unpark__vehicule_8c_1a21ec9a7e303e3e06bb88483d942fb427" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int callback_get_parked_vehicle</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>callback_get_parked_vehicle</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unpark_vehicule.c" line="35" column="12" bodyfile="src/unpark_vehicule.c" bodystart="35" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="unpark__vehicule_8c_1a49e19520e4882a3809a8199d6444701f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void unpark_vehicle</definition>
+        <argsstring>()</argsstring>
+        <name>unpark_vehicle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sort un vehicule du parking avec facture</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unpark_vehicule.c" line="58" column="6" bodyfile="src/unpark_vehicule.c" bodystart="58" bodyend="161"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sqlite3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../include/sqlite3_client.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../include/unpark_vehicule.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_UNPARK_VEHICLE_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_UNPARK_VEHICLE_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8c_1a4d8cb59749f3c45cb059c431d7fe0015" kindref="member">parking_code</ref>[20];</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8c_1aece673c2c99f3121f07ae6d1352a87ed" kindref="member">vehicle_id</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8c_1a81563164bd30213becd02a2287c2b46f" kindref="member">date_arrivee</ref>[30];</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8c_1a7faeb62680eb67042dfff3997daeadf0" kindref="member">date_sortie</ref>[30];</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8c_1a0b1bf0b5477d4169420aa253289439a3" kindref="member">vehicle_count</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8c_1a7dedc33fab2cf416a7bc806d12ba5c7f" kindref="member">parking_fees</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8c_1ac7863d04cd21f96c24bd62c2ee119b3c" kindref="member">matricule</ref>[15];</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8c_1a0af1ce64b9bf090b86a066728c9e64fe" kindref="member">client</ref>[160];</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8c_1a1ecaa681517f32b13670090d5bc6ad4e" kindref="member">libelle_type</ref>[100];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8c_1a868a41ece38d5d51819e2527a256579e" kindref="member">tarif_heure</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8c_1a5c6a079f8b2d7edea433d84b0e83acc6" kindref="member">tarif_24</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8c_1a607ea88e24e4e7d0462b9653bd63e323" kindref="member">duree</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>callback_unpark(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>callback_count_vehicle(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><ref refid="unpark__vehicule_8c_1a0b1bf0b5477d4169420aa253289439a3" kindref="member">vehicle_count</ref><sp/>=<sp/>atoi(argv[0]);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>callback_get_parked_vehicle(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>s.id_vehicule<sp/>0,<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>s.date_arrivee<sp/>1,<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>NOW()<sp/>as<sp/>date_sortie<sp/>2,<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>duree<sp/>(hrs)<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>v.matricule<sp/>4,<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>v.id_type_vehicule<sp/>5,<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>v.client<sp/>6,<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>tv.libelle<sp/>7,<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>tv.tarif_heure<sp/>8,<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>tv.tarif_24_heures<sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>strcpy(<ref refid="unpark__vehicule_8c_1a81563164bd30213becd02a2287c2b46f" kindref="member">date_arrivee</ref>,<sp/>argv[1]);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>strcpy(<ref refid="unpark__vehicule_8c_1a7faeb62680eb67042dfff3997daeadf0" kindref="member">date_sortie</ref>,<sp/>argv[2]);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="unpark__vehicule_8c_1a607ea88e24e4e7d0462b9653bd63e323" kindref="member">duree</ref><sp/>=<sp/>atoi(argv[3]);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>strcpy(<ref refid="unpark__vehicule_8c_1ac7863d04cd21f96c24bd62c2ee119b3c" kindref="member">matricule</ref>,<sp/>argv[4]);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>strcpy(<ref refid="unpark__vehicule_8c_1a0af1ce64b9bf090b86a066728c9e64fe" kindref="member">client</ref>,<sp/>argv[6]);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>strcpy(<ref refid="unpark__vehicule_8c_1a1ecaa681517f32b13670090d5bc6ad4e" kindref="member">libelle_type</ref>,<sp/>argv[7]);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><ref refid="unpark__vehicule_8c_1a868a41ece38d5d51819e2527a256579e" kindref="member">tarif_heure</ref><sp/>=<sp/>atoi(argv[8]);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><ref refid="unpark__vehicule_8c_1a5c6a079f8b2d7edea433d84b0e83acc6" kindref="member">tarif_24</ref><sp/>=<sp/>atoi(argv[9]);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8c_1a49e19520e4882a3809a8199d6444701f" kindref="member">unpark_vehicle</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>sqlite3<sp/>*dbh;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ErrMsg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>con;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Entrez<sp/>le<sp/>\033[1mCode<sp/>de<sp/>Stationnement\033[0m<sp/>:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>fgets(<ref refid="unpark__vehicule_8c_1a4d8cb59749f3c45cb059c431d7fe0015" kindref="member">parking_code</ref>,<sp/>20,<sp/>stdin);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><ref refid="sqlite3__client_8c_1afa847549e9dc6e4f49f651623bc456dc" kindref="member">clear_buffer</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>strcpy(<ref refid="unpark__vehicule_8c_1a4d8cb59749f3c45cb059c431d7fe0015" kindref="member">parking_code</ref>,<sp/><ref refid="sqlite3__client_8c_1a06798d058792d39a2eb6f3b784ae1532" kindref="member">trim</ref>(<ref refid="unpark__vehicule_8c_1a4d8cb59749f3c45cb059c431d7fe0015" kindref="member">parking_code</ref>));</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>p<sp/>=<sp/>strtok(<ref refid="unpark__vehicule_8c_1a4d8cb59749f3c45cb059c431d7fe0015" kindref="member">parking_code</ref>,<sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unpark__vehicule_8c_1aece673c2c99f3121f07ae6d1352a87ed" kindref="member">vehicle_id</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(p!=NULL){</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unpark__vehicule_8c_1aece673c2c99f3121f07ae6d1352a87ed" kindref="member">vehicle_id</ref><sp/>=<sp/>atoi(p);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>p<sp/>=<sp/>strtok(NULL,<sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;Vehicle<sp/>ID<sp/>::<sp/>##%d##\n&quot;,<sp/>vehicle_id);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>con<sp/>=<sp/>sqlite3_open(<ref refid="sqlite3__client_8c_1a47d65c930f9eac8a7d8277affeba949b" kindref="member">DB_FILE</ref>,<sp/>&amp;dbh);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(con)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQLite3<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>sqlite3_errmsg(dbh));</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>vehicle<sp/>is<sp/>[in]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>Query0[100];</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>sprintf(Query0,<sp/></highlight><highlight class="stringliteral">&quot;SELECT<sp/>COUNT(*)<sp/>AS<sp/>nb<sp/>FROM<sp/>stationnements<sp/>WHERE<sp/>id_vehicule=%d<sp/>AND<sp/>etat=&apos;in&apos;;&quot;</highlight><highlight class="normal">,<sp/><ref refid="unpark__vehicule_8c_1aece673c2c99f3121f07ae6d1352a87ed" kindref="member">vehicle_id</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>con<sp/>=<sp/>sqlite3_exec(dbh,<sp/>Query0,<sp/>callback_count_vehicle,<sp/>0,<sp/>&amp;ErrMsg);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>con<sp/>!=<sp/>SQLITE_OK<sp/>){</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQL<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>ErrMsg);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>sqlite3_free(ErrMsg);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="unpark__vehicule_8c_1a0b1bf0b5477d4169420aa253289439a3" kindref="member">vehicle_count</ref><sp/>!=<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\033[1;31mDésolé,<sp/>ce<sp/>Véhicule<sp/>n&apos;est<sp/>pas<sp/>en<sp/>Stationnement.\033[0m\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>vehicle<sp/>and<sp/>compute<sp/>parking<sp/>fees</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>Query[500];</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>sprintf(Query,<sp/></highlight><highlight class="stringliteral">&quot;SELECT<sp/>s.id_vehicule,<sp/>s.date_arrivee,<sp/>DATETIME(&apos;now&apos;)<sp/>as<sp/>date_sortie,<sp/>CAST((JULIANDAY(DATETIME(&apos;now&apos;))<sp/>-<sp/>JULIANDAY(s.date_arrivee))<sp/>*<sp/>24<sp/>AS<sp/>INTEGER)<sp/>as<sp/>duree,<sp/>v.matricule,<sp/>v.id_type_vehicule,<sp/>v.client,<sp/>tv.libelle,<sp/>tv.tarif_heure,<sp/>tv.tarif_24_heures<sp/>FROM<sp/>stationnements<sp/>s<sp/>LEFT<sp/>JOIN<sp/>vehicules<sp/>v<sp/>ON<sp/>s.id_vehicule=v.id<sp/>JOIN<sp/>type_vehicules<sp/>tv<sp/>ON<sp/>v.id_type_vehicule=tv.id<sp/>WHERE<sp/>s.id_vehicule=%d<sp/>LIMIT<sp/>1;&quot;</highlight><highlight class="normal">,<sp/><ref refid="unpark__vehicule_8c_1aece673c2c99f3121f07ae6d1352a87ed" kindref="member">vehicle_id</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>sprintf(Query,<sp/>&quot;UPDATE<sp/>adherents_livres<sp/>SET<sp/>date_retour=datetime(&apos;now&apos;),<sp/>etat=&apos;%s&apos;<sp/>WHERE<sp/>id_adherent=&apos;%s&apos;<sp/>AND<sp/>id_livre=&apos;%s&apos;;&quot;,<sp/>&quot;rendu&quot;,<sp/>id_adherent,<sp/>id_livre);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;Query<sp/>:<sp/>%s\n&quot;,<sp/>Query);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>con<sp/>=<sp/>sqlite3_exec(dbh,<sp/>Query,<sp/>callback_get_parked_vehicle,<sp/>0,<sp/>&amp;ErrMsg);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>con<sp/>!=<sp/>SQLITE_OK<sp/>){</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQL<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>ErrMsg);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sqlite3_free(ErrMsg);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>char<sp/>parking_code[20];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>unsigned<sp/>int<sp/>vehicle_id;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>char<sp/>date_arrivee[30];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>char<sp/>date_sortie[30];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>unsigned<sp/>int<sp/>vehicle_count;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>unsigned<sp/>int<sp/>parking_fees;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>char<sp/>matricule[15];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>char<sp/>client[160];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>char<sp/>libelle_type[100];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>unsigned<sp/>int<sp/>tarif_heure;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>unsigned<sp/>int<sp/>tarif_24;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>unsigned<sp/>int<sp/>duree;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="unpark__vehicule_8c_1a607ea88e24e4e7d0462b9653bd63e323" kindref="member">duree</ref><sp/>&amp;&amp;<sp/>(strcmp(<ref refid="unpark__vehicule_8c_1a81563164bd30213becd02a2287c2b46f" kindref="member">date_arrivee</ref>,<sp/><ref refid="unpark__vehicule_8c_1a7faeb62680eb67042dfff3997daeadf0" kindref="member">date_sortie</ref>)<sp/>!=<sp/>0))<sp/><ref refid="unpark__vehicule_8c_1a607ea88e24e4e7d0462b9653bd63e323" kindref="member">duree</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unpark__vehicule_8c_1a7dedc33fab2cf416a7bc806d12ba5c7f" kindref="member">parking_fees</ref><sp/>=<sp/>((int)(<ref refid="unpark__vehicule_8c_1a607ea88e24e4e7d0462b9653bd63e323" kindref="member">duree</ref><sp/>/<sp/>24))<sp/>*<sp/><ref refid="unpark__vehicule_8c_1a5c6a079f8b2d7edea433d84b0e83acc6" kindref="member">tarif_24</ref><sp/>+<sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(<ref refid="unpark__vehicule_8c_1a607ea88e24e4e7d0462b9653bd63e323" kindref="member">duree</ref><sp/>%<sp/>24))<sp/>*<sp/><ref refid="unpark__vehicule_8c_1a868a41ece38d5d51819e2527a256579e" kindref="member">tarif_heure</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\nVOTRE<sp/>FACTURE\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Code<sp/>de<sp/>Stationnement<sp/>:\t%s-%d\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="unpark__vehicule_8c_1a4d8cb59749f3c45cb059c431d7fe0015" kindref="member">parking_code</ref>,<sp/><ref refid="unpark__vehicule_8c_1aece673c2c99f3121f07ae6d1352a87ed" kindref="member">vehicle_id</ref>);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Client<sp/>:\t%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="unpark__vehicule_8c_1a0af1ce64b9bf090b86a066728c9e64fe" kindref="member">client</ref>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Matricule<sp/>Vehicule<sp/>:\t%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="unpark__vehicule_8c_1ac7863d04cd21f96c24bd62c2ee119b3c" kindref="member">matricule</ref>);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Type<sp/>de<sp/>Vehicule<sp/>:\t%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="unpark__vehicule_8c_1a1ecaa681517f32b13670090d5bc6ad4e" kindref="member">libelle_type</ref>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Date<sp/>Arrivee<sp/>:\t%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="unpark__vehicule_8c_1a81563164bd30213becd02a2287c2b46f" kindref="member">date_arrivee</ref>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Date<sp/>Sortie<sp/>:\t%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="unpark__vehicule_8c_1a7faeb62680eb67042dfff3997daeadf0" kindref="member">date_sortie</ref>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Duree<sp/>:\t%d<sp/>heures\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="unpark__vehicule_8c_1a607ea88e24e4e7d0462b9653bd63e323" kindref="member">duree</ref>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Tarif<sp/>Heure<sp/>:\t%d<sp/>FCFA\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="unpark__vehicule_8c_1a868a41ece38d5d51819e2527a256579e" kindref="member">tarif_heure</ref>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="unpark__vehicule_8c_1a607ea88e24e4e7d0462b9653bd63e323" kindref="member">duree</ref><sp/>&gt;=<sp/>24)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Tarif<sp/>24<sp/>Heures<sp/>:\t%d<sp/>FCFA\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="unpark__vehicule_8c_1a5c6a079f8b2d7edea433d84b0e83acc6" kindref="member">tarif_24</ref>);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;TOTAL<sp/>FACTURE<sp/>:\t%d<sp/>FCFA\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="unpark__vehicule_8c_1a7dedc33fab2cf416a7bc806d12ba5c7f" kindref="member">parking_fees</ref>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c,<sp/>proceed<sp/>=<sp/></highlight><highlight class="charliteral">&apos;N&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Confirmez-vous<sp/>la<sp/>sortie<sp/>de<sp/>ce<sp/>Véhicule<sp/>?<sp/>O/N<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>scanf(</highlight><highlight class="stringliteral">&quot;%c&quot;</highlight><highlight class="normal">,<sp/>&amp;proceed);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c<sp/>=<sp/>getchar();</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c<sp/>==<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(proceed<sp/>==<sp/></highlight><highlight class="charliteral">&apos;O&apos;</highlight><highlight class="normal"><sp/>||<sp/>proceed<sp/>==<sp/></highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>Query1[100];</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(Query1,<sp/></highlight><highlight class="stringliteral">&quot;UPDATE<sp/>stationnements<sp/>SET<sp/>date_sortie=&apos;%s&apos;,<sp/>etat=&apos;out&apos;<sp/>WHERE<sp/>id_vehicule=%d;&quot;</highlight><highlight class="normal">,<sp/><ref refid="unpark__vehicule_8c_1a7faeb62680eb67042dfff3997daeadf0" kindref="member">date_sortie</ref>,<sp/><ref refid="unpark__vehicule_8c_1aece673c2c99f3121f07ae6d1352a87ed" kindref="member">vehicle_id</ref>);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>con<sp/>=<sp/>sqlite3_exec(dbh,<sp/>Query1,<sp/>callback_unpark,<sp/>0,<sp/>&amp;ErrMsg);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>con<sp/>!=<sp/>SQLITE_OK<sp/>){</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQL<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>ErrMsg);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sqlite3_free(ErrMsg);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>Query211[100];</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(Query211,<sp/></highlight><highlight class="stringliteral">&quot;UPDATE<sp/>type_vehicules<sp/>SET<sp/>places_dispo=places_dispo-1<sp/>WHERE<sp/>libelle=&apos;%s&apos;<sp/>LIMIT<sp/>1;&quot;</highlight><highlight class="normal">,<sp/><ref refid="unpark__vehicule_8c_1a1ecaa681517f32b13670090d5bc6ad4e" kindref="member">libelle_type</ref>);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>con<sp/>=<sp/>sqlite3_exec(dbh,<sp/>Query211,<sp/>callback_unpark,<sp/>0,<sp/>&amp;ErrMsg);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>con<sp/>!=<sp/>SQLITE_OK<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQL<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>ErrMsg);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sqlite3_free(ErrMsg);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\033[32mLe<sp/>Véhicule<sp/>a<sp/>bien<sp/>été<sp/>sorti<sp/>!\033[0m\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Vous<sp/>avez<sp/>annulé<sp/>!\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>sqlite3_close(dbh);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/unpark_vehicule.c"/>
+  </compounddef>
+</doxygen>

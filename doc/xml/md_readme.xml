@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="md_readme" kind="page">
+    <compoundname>md_readme</compoundname>
+    <title>Mini Parking</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Mini Parking en C avec SQLite3, pour le compte du TP3 de classe - Programmation avancee en C</para>
+<para><heading level="1">Installation</heading>
+</para>
+<para>Changer le chemin vers le fichier Database <computeroutput>DB_FILE</computeroutput> dans <computeroutput><ref refid="sqlite3__client_8c" kindref="compound">src/sqlite3_client.c</ref></computeroutput><itemizedlist>
+<listitem><para>SQLite3 : <computeroutput>sudo apt-get install -y sqlite3</computeroutput></para>
+</listitem><listitem><para>libSQLite3-dev <computeroutput>sudo apt-get install -y libsqlite3-dev</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+<para><heading level="1">Compilation</heading>
+</para>
+<para><computeroutput>make app</computeroutput></para>
+<para><heading level="1">Execution</heading>
+</para>
+<para><computeroutput>./app</computeroutput> </para>
+    </detaileddescription>
+    <location file="readme.md"/>
+  </compounddef>
+</doxygen>

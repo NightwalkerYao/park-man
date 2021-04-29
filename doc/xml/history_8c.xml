@@ -1,0 +1,465 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="history_8c" kind="file" language="C++">
+    <compoundname>history.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">sqlite3.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="fort_8h" local="yes">../include/fort.h</includes>
+    <includes refid="sqlite3__client_8h" local="yes">../include/sqlite3_client.h</includes>
+    <includes refid="history_8h" local="yes">../include/history.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>../include/fort.h</label>
+        <link refid="fort_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>../include/history.h</label>
+        <link refid="history_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../include/sqlite3_client.h</label>
+        <link refid="sqlite3__client_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/history.c</label>
+        <link refid="history_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>limits.h</label>
+      </node>
+      <node id="4">
+        <label>sqlite3.h</label>
+      </node>
+      <node id="7">
+        <label>stddef.h</label>
+      </node>
+      <node id="8">
+        <label>stdint.h</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="history_8c_1a9db7c22f979dff4d099d6b7efb172966" prot="public" static="no">
+        <name>_HISTORY_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="10" column="9" bodyfile="src/history.c" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="history_8c_1adf122296c5cf5816e18966e23e4ef4f8" prot="public" static="yes" mutable="no">
+        <type><ref refid="fort_8h_1a6307d2840e0e96880c4d0f04b12a2187" kindref="member">ft_table_t</ref> *</type>
+        <definition>ft_table_t* table</definition>
+        <argsstring></argsstring>
+        <name>table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="12" column="19" bodyfile="src/history.c" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8c_1acf6837bb114fcf747a5c0ab27348b3f6" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int vehicles_count</definition>
+        <argsstring></argsstring>
+        <name>vehicles_count</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="13" column="12" bodyfile="src/history.c" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8c_1a5287b31e345f72dc7408a09ea07bee06" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hparking_code[20]</definition>
+        <argsstring>[20]</argsstring>
+        <name>hparking_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="15" column="6" bodyfile="src/history.c" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8c_1a2b3b6bf255fcf2d98831793c9ce1f88a" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int hvehicle_id</definition>
+        <argsstring></argsstring>
+        <name>hvehicle_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="16" column="14" bodyfile="src/history.c" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8c_1a846cdcb42696f1c2e70fd0b3ba099e8d" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hdate_arrivee[30]</definition>
+        <argsstring>[30]</argsstring>
+        <name>hdate_arrivee</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="17" column="6" bodyfile="src/history.c" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8c_1a7fe506d1028162e9cb90fc4feddc9d75" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hdate_sortie[30]</definition>
+        <argsstring>[30]</argsstring>
+        <name>hdate_sortie</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="18" column="6" bodyfile="src/history.c" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8c_1af3d0d13230b471364b17f5e24b10991e" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int hvehicle_count</definition>
+        <argsstring></argsstring>
+        <name>hvehicle_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="19" column="14" bodyfile="src/history.c" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8c_1a7107390f80beda4dbbda7010c0a0b1cf" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int hparking_fees</definition>
+        <argsstring></argsstring>
+        <name>hparking_fees</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="20" column="14" bodyfile="src/history.c" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8c_1af0f141ef259cedfa9994d376b529683a" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hmatricule[15]</definition>
+        <argsstring>[15]</argsstring>
+        <name>hmatricule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="21" column="6" bodyfile="src/history.c" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8c_1abc2ca53b6db7be4945e1b3fb54bfda6e" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hclient[160]</definition>
+        <argsstring>[160]</argsstring>
+        <name>hclient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="22" column="6" bodyfile="src/history.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8c_1a643dbcabdf19780be261d54e12a8337f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hlibelle_type[100]</definition>
+        <argsstring>[100]</argsstring>
+        <name>hlibelle_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="23" column="6" bodyfile="src/history.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8c_1ae03f971ee820f8f14dee149871565b0d" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int htarif_heure</definition>
+        <argsstring></argsstring>
+        <name>htarif_heure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="24" column="14" bodyfile="src/history.c" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8c_1a253e452fa36f707debb5c0f3e21fd36d" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int htarif_24</definition>
+        <argsstring></argsstring>
+        <name>htarif_24</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="25" column="14" bodyfile="src/history.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8c_1ac8f5cfce512f105e9c0756ffa25b2db6" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int hduree</definition>
+        <argsstring></argsstring>
+        <name>hduree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="26" column="14" bodyfile="src/history.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="history_8c_1a9eb665af857bc3d71c14bbe42efdce8d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int callback_print_vehicles_count_h</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>callback_print_vehicles_count_h</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="28" column="12" bodyfile="src/history.c" bodystart="28" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="history_8c_1a71cd46ea2444c1ca051ef1adb5823af0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int callback_print_vehicles_h</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>callback_print_vehicles_h</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="44" column="12" bodyfile="src/history.c" bodystart="44" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="history_8c_1a46729de1c2a66e0860c46894788ed9ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void history</definition>
+        <argsstring>()</argsstring>
+        <name>history</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Recuperer et affiche l&apos;historique des vehicules qui sont sortis du parking</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/history.c" line="64" column="6" bodyfile="src/history.c" bodystart="64" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sqlite3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../include/fort.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../include/sqlite3_client.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../include/history.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_HISTORY_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_HISTORY_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structft__table" kindref="compound">ft_table_t</ref><sp/>*table;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vehicles_count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="history_8c_1a5287b31e345f72dc7408a09ea07bee06" kindref="member">hparking_code</ref>[20];</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="history_8c_1a2b3b6bf255fcf2d98831793c9ce1f88a" kindref="member">hvehicle_id</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="history_8c_1a846cdcb42696f1c2e70fd0b3ba099e8d" kindref="member">hdate_arrivee</ref>[30];</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="history_8c_1a7fe506d1028162e9cb90fc4feddc9d75" kindref="member">hdate_sortie</ref>[30];</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="history_8c_1af3d0d13230b471364b17f5e24b10991e" kindref="member">hvehicle_count</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="history_8c_1a7107390f80beda4dbbda7010c0a0b1cf" kindref="member">hparking_fees</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="history_8c_1af0f141ef259cedfa9994d376b529683a" kindref="member">hmatricule</ref>[15];</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="history_8c_1abc2ca53b6db7be4945e1b3fb54bfda6e" kindref="member">hclient</ref>[160];</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="history_8c_1a643dbcabdf19780be261d54e12a8337f" kindref="member">hlibelle_type</ref>[100];</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="history_8c_1ae03f971ee820f8f14dee149871565b0d" kindref="member">htarif_heure</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="history_8c_1a253e452fa36f707debb5c0f3e21fd36d" kindref="member">htarif_24</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="history_8c_1ac8f5cfce512f105e9c0756ffa25b2db6" kindref="member">hduree</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>callback_print_vehicles_count_h(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>vehicles_count<sp/>=<sp/>atoi(argv[0]);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(vehicles_count<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>table<sp/>=<sp/><ref refid="fort_8c_1af73fc78695a3009f5ff79a2c0d28c600" kindref="member">ft_create_table</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Change<sp/>border<sp/>style<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="fort_8c_1aaa966b7da0ee2e2d2a93dc6a5e1ef81b" kindref="member">ft_set_border_style</ref>(table,<sp/><ref refid="fort_8c_1a23314491db1204b8654f8cd610692260" kindref="member">FT_DOUBLE2_STYLE</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>&quot;header&quot;<sp/>type<sp/>for<sp/>the<sp/>first<sp/>row<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="fort_8c_1a10dc95b3d810a0ab2bf6c90b7b8c66a4" kindref="member">ft_set_cell_prop</ref>(table,<sp/>0,<sp/><ref refid="fort_8h_1ad5b6b32262309f37874d11369f47c7a5" kindref="member">FT_ANY_COLUMN</ref>,<sp/><ref refid="fort_8h_1abd5e4b5a6cb494024967f9d22a50c708" kindref="member">FT_CPROP_ROW_TYPE</ref>,<sp/><ref refid="fort_8h_1a06d9536a2e476d68f5055820535d3b34a2a0a31078eac88202029c3e9bdaa614a" kindref="member">FT_ROW_HEADER</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="fort_8h_1a4ebdb2eea82c8b8c3b80f0c7b7bf1536" kindref="member">ft_write_ln</ref>(table,<sp/></highlight><highlight class="stringliteral">&quot;CODE&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;MATRICULE&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;TYPE&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;CLIENT&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ARRIVEE&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;SORTIE&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;TOTAL<sp/>FACTURE&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\033[1m<sp/>Il<sp/>n&apos;y<sp/>a<sp/>rien<sp/>à<sp/>afficher.\033[0m\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>callback_print_vehicles_h(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>s.id_vehicule<sp/>0,<sp/>s.date_arrivee<sp/>1,<sp/>s.date_sortie<sp/>2,<sp/>duree<sp/>3,<sp/>v.matricule<sp/>4,<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>v.id_type_vehicule<sp/>5,<sp/>v.client<sp/>6<sp/>,<sp/>tv.libelle<sp/>7,<sp/>tv.tarif_heure<sp/>8,<sp/>tv.tarif_24_heures<sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>&quot;CODE&quot;,<sp/>&quot;MATRICULE&quot;,<sp/>&quot;TYPE&quot;,<sp/>&quot;CLIENT&quot;,<sp/>&quot;ARRIVEE&quot;,<sp/>&quot;SORTIE&quot;,<sp/>&quot;TOTAL<sp/>FACTURE&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>strcpy(<ref refid="history_8c_1a846cdcb42696f1c2e70fd0b3ba099e8d" kindref="member">hdate_arrivee</ref>,<sp/>argv[1]);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>strcpy(<ref refid="history_8c_1a7fe506d1028162e9cb90fc4feddc9d75" kindref="member">hdate_sortie</ref>,<sp/>argv[2]);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><ref refid="history_8c_1ac8f5cfce512f105e9c0756ffa25b2db6" kindref="member">hduree</ref><sp/>=<sp/>atoi(argv[3]);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>strcpy(<ref refid="history_8c_1af0f141ef259cedfa9994d376b529683a" kindref="member">hmatricule</ref>,<sp/>argv[4]);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>strcpy(<ref refid="history_8c_1abc2ca53b6db7be4945e1b3fb54bfda6e" kindref="member">hclient</ref>,<sp/>argv[6]);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>strcpy(<ref refid="history_8c_1a643dbcabdf19780be261d54e12a8337f" kindref="member">hlibelle_type</ref>,<sp/>argv[7]);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="history_8c_1ae03f971ee820f8f14dee149871565b0d" kindref="member">htarif_heure</ref><sp/>=<sp/>atoi(argv[8]);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><ref refid="history_8c_1a253e452fa36f707debb5c0f3e21fd36d" kindref="member">htarif_24</ref><sp/>=<sp/>atoi(argv[9]);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="history_8c_1ac8f5cfce512f105e9c0756ffa25b2db6" kindref="member">hduree</ref><sp/>&amp;&amp;<sp/>(strcmp(<ref refid="history_8c_1a846cdcb42696f1c2e70fd0b3ba099e8d" kindref="member">hdate_arrivee</ref>,<sp/><ref refid="history_8c_1a7fe506d1028162e9cb90fc4feddc9d75" kindref="member">hdate_sortie</ref>)<sp/>!=<sp/>0))<sp/><ref refid="history_8c_1ac8f5cfce512f105e9c0756ffa25b2db6" kindref="member">hduree</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><ref refid="history_8c_1a7107390f80beda4dbbda7010c0a0b1cf" kindref="member">hparking_fees</ref><sp/>=<sp/>((int)(<ref refid="history_8c_1ac8f5cfce512f105e9c0756ffa25b2db6" kindref="member">hduree</ref><sp/>/<sp/>24))<sp/>*<sp/><ref refid="history_8c_1a253e452fa36f707debb5c0f3e21fd36d" kindref="member">htarif_24</ref><sp/>+<sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(<ref refid="history_8c_1ac8f5cfce512f105e9c0756ffa25b2db6" kindref="member">hduree</ref><sp/>%<sp/>24))<sp/>*<sp/><ref refid="history_8c_1ae03f971ee820f8f14dee149871565b0d" kindref="member">htarif_heure</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><ref refid="fort_8c_1aba01f77855c39b8ecdd47db944429088" kindref="member">ft_u8printf_ln</ref>(table,<sp/></highlight><highlight class="stringliteral">&quot;P%s-%s|%s|%s|%s|%s|%s|%s<sp/>FCFA&quot;</highlight><highlight class="normal">,<sp/>argv[5],<sp/>argv[0],<sp/>argv[4],<sp/>argv[7],<sp/>argv[6],<sp/>argv[1],<sp/>argv[2],<sp/><ref refid="history_8c_1a7107390f80beda4dbbda7010c0a0b1cf" kindref="member">hparking_fees</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="history_8c_1a46729de1c2a66e0860c46894788ed9ba" kindref="member">history</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>sqlite3<sp/>*dbh;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ErrMsg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>con;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>con<sp/>=<sp/>sqlite3_open(<ref refid="sqlite3__client_8c_1a47d65c930f9eac8a7d8277affeba949b" kindref="member">DB_FILE</ref>,<sp/>&amp;dbh);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(con)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQLite3<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>sqlite3_errmsg(dbh));</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>Query_0<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;SELECT<sp/>COUNT(*)<sp/>AS<sp/>nb<sp/>FROM<sp/>stationnements<sp/>WHERE<sp/>etat=&apos;out&apos;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>con<sp/>=<sp/>sqlite3_exec(dbh,<sp/>Query_0,<sp/>callback_print_vehicles_count_h,<sp/>0,<sp/>&amp;ErrMsg);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>con<sp/>!=<sp/>SQLITE_OK<sp/>){</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQL<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>ErrMsg);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>sqlite3_free(ErrMsg);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>Query<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;SELECT<sp/>s.id_vehicule,<sp/>s.date_arrivee,<sp/>s.date_sortie,<sp/>CAST((JULIANDAY(s.date_sortie)<sp/>-<sp/>JULIANDAY(s.date_arrivee))<sp/>*<sp/>24<sp/>AS<sp/>INTEGER)<sp/>as<sp/>duree,<sp/>v.matricule,<sp/>v.id_type_vehicule,<sp/>v.client,<sp/>tv.libelle,<sp/>tv.tarif_heure,<sp/>tv.tarif_24_heures<sp/>FROM<sp/>stationnements<sp/>s<sp/>LEFT<sp/>JOIN<sp/>vehicules<sp/>v<sp/>ON<sp/>s.id_vehicule=v.id<sp/>JOIN<sp/>type_vehicules<sp/>tv<sp/>ON<sp/>v.id_type_vehicule=tv.id<sp/>WHERE<sp/>s.etat=&apos;out&apos;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>con<sp/>=<sp/>sqlite3_exec(dbh,<sp/>Query,<sp/>callback_print_vehicles_h,<sp/>0,<sp/>&amp;ErrMsg);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>con<sp/>!=<sp/>SQLITE_OK<sp/>){</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQL<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>ErrMsg);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>sqlite3_free(ErrMsg);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(vehicles_count<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="fort_8c_1a10dc95b3d810a0ab2bf6c90b7b8c66a4" kindref="member">ft_set_cell_prop</ref>(table,<sp/><ref refid="fort_8h_1a18fe66b5bbb33d73be7ba06518c1f40d" kindref="member">FT_ANY_ROW</ref>,<sp/>7,<sp/><ref refid="fort_8h_1ae5586130d3dd258d477e370923d0889e" kindref="member">FT_CPROP_TEXT_ALIGN</ref>,<sp/><ref refid="fort_8h_1a3ce6dedcf688e310a3cfbb5cdae9d32cac43d09334b02f1300989a8789455183e" kindref="member">FT_ALIGNED_CENTER</ref>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="fort_8c_1aba499778dc3afcddfed50e79b0d97832" kindref="member">ft_to_string</ref>(table));</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="fort_8c_1ad8cb9ed46da7455f8b6baed42a4a1d31" kindref="member">ft_destroy_table</ref>(table);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>sqlite3_close(dbh);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/history.c"/>
+  </compounddef>
+</doxygen>

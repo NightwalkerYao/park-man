@@ -1,0 +1,93 @@
+.TH "include/sqlite3_client.h" 3 "Jeudi 29 Avril 2021" "Version 1.0.0" "Park-Man" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/sqlite3_client.h \- Le client de test de la connectivite avec la base de donnees et les fonctions communes\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <sqlite3\&.h>\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBclear_buffer\fP (void)"
+.br
+.ti -1c
+.RI "char * \fBtrim\fP (char *)"
+.br
+.ti -1c
+.RI "sqlite3 * \fBconnect\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const char * \fBDB_FILE\fP"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Le client de test de la connectivite avec la base de donnees et les fonctions communes\&. 
+
+
+.PP
+\fBVersion\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+\fBAuteur\fP
+.RS 4
+Groupe 10 MBDS/SIGL 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+25 Avril 2021 
+.RE
+.PP
+
+.SH "Documentation des fonctions"
+.PP 
+.SS "void clear_buffer (void)"
+Nettoie le tampon apres un appel \fCscanf\fP 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIvoid\fP 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "sqlite3* connect (void)"
+
+.PP
+\fBParamètres\fP
+.RS 4
+\fIvoid\fP 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+sqlite3* une instance de connexion SQLite3
+.RE
+.PP
+Teste la connectivite avec la base de donnees et affiche une alerte sur l'etat 
+.SS "char* trim (char * str)"
+
+.SH "Documentation des variables"
+.PP 
+.SS "const char* DB_FILE\fC [extern]\fP"
+Le chemin vers le fichier de base de donnees 
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Park-Man à partir du code source\&.

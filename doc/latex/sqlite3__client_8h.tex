@@ -1,0 +1,99 @@
+\hypertarget{sqlite3__client_8h}{}\doxysection{Référence du fichier include/sqlite3\+\_\+client.h}
+\label{sqlite3__client_8h}\index{include/sqlite3\_client.h@{include/sqlite3\_client.h}}
+
+
+Le client de test de la connectivite avec la base de donnees et les fonctions communes.  
+
+
+{\ttfamily \#include $<$sqlite3.\+h$>$}\newline
+Graphe des dépendances par inclusion de sqlite3\+\_\+client.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{sqlite3__client_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sqlite3__client_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{sqlite3__client_8h_a876d5723d0511f25736dcd24ef3fd437}{clear\+\_\+buffer}} (void)
+\item 
+char $\ast$ \mbox{\hyperlink{sqlite3__client_8h_a29ba0737e871f9becbdf9b18aec433ec}{trim}} (char $\ast$)
+\item 
+sqlite3 $\ast$ \mbox{\hyperlink{sqlite3__client_8h_aa59d79b862f7ba5c417e27f14ed04de3}{connect}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \mbox{\hyperlink{sqlite3__client_8h_a43eb1be79ea533680fa91d0bd486db49}{DB\+\_\+\+FILE}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Le client de test de la connectivite avec la base de donnees et les fonctions communes. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Auteur}
+Groupe 10 MBDS/\+SIGL 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25 Avril 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{sqlite3__client_8h_a876d5723d0511f25736dcd24ef3fd437}\label{sqlite3__client_8h_a876d5723d0511f25736dcd24ef3fd437}} 
+\index{sqlite3\_client.h@{sqlite3\_client.h}!clear\_buffer@{clear\_buffer}}
+\index{clear\_buffer@{clear\_buffer}!sqlite3\_client.h@{sqlite3\_client.h}}
+\doxysubsubsection{\texorpdfstring{clear\_buffer()}{clear\_buffer()}}
+{\footnotesize\ttfamily void clear\+\_\+buffer (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Nettoie le tampon apres un appel {\ttfamily scanf} 
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sqlite3__client_8h_aa59d79b862f7ba5c417e27f14ed04de3}\label{sqlite3__client_8h_aa59d79b862f7ba5c417e27f14ed04de3}} 
+\index{sqlite3\_client.h@{sqlite3\_client.h}!connect@{connect}}
+\index{connect@{connect}!sqlite3\_client.h@{sqlite3\_client.h}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily sqlite3$\ast$ connect (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+sqlite3$\ast$ une instance de connexion SQLite3
+\end{DoxyReturn}
+Teste la connectivite avec la base de donnees et affiche une alerte sur l\textquotesingle{}etat \mbox{\Hypertarget{sqlite3__client_8h_a29ba0737e871f9becbdf9b18aec433ec}\label{sqlite3__client_8h_a29ba0737e871f9becbdf9b18aec433ec}} 
+\index{sqlite3\_client.h@{sqlite3\_client.h}!trim@{trim}}
+\index{trim@{trim}!sqlite3\_client.h@{sqlite3\_client.h}}
+\doxysubsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily char$\ast$ trim (\begin{DoxyParamCaption}\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{sqlite3__client_8h_a43eb1be79ea533680fa91d0bd486db49}\label{sqlite3__client_8h_a43eb1be79ea533680fa91d0bd486db49}} 
+\index{sqlite3\_client.h@{sqlite3\_client.h}!DB\_FILE@{DB\_FILE}}
+\index{DB\_FILE@{DB\_FILE}!sqlite3\_client.h@{sqlite3\_client.h}}
+\doxysubsubsection{\texorpdfstring{DB\_FILE}{DB\_FILE}}
+{\footnotesize\ttfamily const char$\ast$ DB\+\_\+\+FILE\hspace{0.3cm}{\ttfamily [extern]}}
+
+Le chemin vers le fichier de base de donnees 

@@ -1,0 +1,91 @@
+\hypertarget{sqlite3__client_8c}{}\doxysection{Référence du fichier src/sqlite3\+\_\+client.c}
+\label{sqlite3__client_8c}\index{src/sqlite3\_client.c@{src/sqlite3\_client.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$sqlite3.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../include/sqlite3\+\_\+client.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de sqlite3\+\_\+client.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sqlite3__client_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{sqlite3__client_8c_ac9d3c22a63179feab8be4b4404b0ff6b}{\+\_\+\+SQLITE3\+\_\+\+CLIENT\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{sqlite3__client_8c_afa847549e9dc6e4f49f651623bc456dc}{clear\+\_\+buffer}} ()
+\item 
+char $\ast$ \mbox{\hyperlink{sqlite3__client_8c_a06798d058792d39a2eb6f3b784ae1532}{trim}} (char $\ast$str)
+\item 
+sqlite3 $\ast$ \mbox{\hyperlink{sqlite3__client_8c_a3a07850661ad3e9895ff28e8afc33dc1}{connect}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \mbox{\hyperlink{sqlite3__client_8c_a47d65c930f9eac8a7d8277affeba949b}{DB\+\_\+\+FILE}} = \char`\"{}/home/nightwalker/Class/C\+\_\+\+Adv/park-\/man/Database.\+db\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des macros}
+\mbox{\Hypertarget{sqlite3__client_8c_ac9d3c22a63179feab8be4b4404b0ff6b}\label{sqlite3__client_8c_ac9d3c22a63179feab8be4b4404b0ff6b}} 
+\index{sqlite3\_client.c@{sqlite3\_client.c}!\_SQLITE3\_CLIENT\_@{\_SQLITE3\_CLIENT\_}}
+\index{\_SQLITE3\_CLIENT\_@{\_SQLITE3\_CLIENT\_}!sqlite3\_client.c@{sqlite3\_client.c}}
+\doxysubsubsection{\texorpdfstring{\_SQLITE3\_CLIENT\_}{\_SQLITE3\_CLIENT\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+SQLITE3\+\_\+\+CLIENT\+\_\+}
+
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{sqlite3__client_8c_afa847549e9dc6e4f49f651623bc456dc}\label{sqlite3__client_8c_afa847549e9dc6e4f49f651623bc456dc}} 
+\index{sqlite3\_client.c@{sqlite3\_client.c}!clear\_buffer@{clear\_buffer}}
+\index{clear\_buffer@{clear\_buffer}!sqlite3\_client.c@{sqlite3\_client.c}}
+\doxysubsubsection{\texorpdfstring{clear\_buffer()}{clear\_buffer()}}
+{\footnotesize\ttfamily void clear\+\_\+buffer (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Nettoie le tampon apres un appel {\ttfamily scanf} 
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sqlite3__client_8c_a3a07850661ad3e9895ff28e8afc33dc1}\label{sqlite3__client_8c_a3a07850661ad3e9895ff28e8afc33dc1}} 
+\index{sqlite3\_client.c@{sqlite3\_client.c}!connect@{connect}}
+\index{connect@{connect}!sqlite3\_client.c@{sqlite3\_client.c}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily sqlite3 $\ast$ connect (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+sqlite3$\ast$ une instance de connexion SQLite3
+\end{DoxyReturn}
+Teste la connectivite avec la base de donnees et affiche une alerte sur l\textquotesingle{}etat \mbox{\Hypertarget{sqlite3__client_8c_a06798d058792d39a2eb6f3b784ae1532}\label{sqlite3__client_8c_a06798d058792d39a2eb6f3b784ae1532}} 
+\index{sqlite3\_client.c@{sqlite3\_client.c}!trim@{trim}}
+\index{trim@{trim}!sqlite3\_client.c@{sqlite3\_client.c}}
+\doxysubsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily char$\ast$ trim (\begin{DoxyParamCaption}\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{sqlite3__client_8c_a47d65c930f9eac8a7d8277affeba949b}\label{sqlite3__client_8c_a47d65c930f9eac8a7d8277affeba949b}} 
+\index{sqlite3\_client.c@{sqlite3\_client.c}!DB\_FILE@{DB\_FILE}}
+\index{DB\_FILE@{DB\_FILE}!sqlite3\_client.c@{sqlite3\_client.c}}
+\doxysubsubsection{\texorpdfstring{DB\_FILE}{DB\_FILE}}
+{\footnotesize\ttfamily const char $\ast$ DB\+\_\+\+FILE = \char`\"{}/home/nightwalker/Class/C\+\_\+\+Adv/park-\/man/Database.\+db\char`\"{}}
+
+Le chemin vers le fichier de base de donnees 

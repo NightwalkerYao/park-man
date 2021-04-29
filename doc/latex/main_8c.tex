@@ -1,0 +1,93 @@
+\hypertarget{main_8c}{}\doxysection{Référence du fichier src/main.c}
+\label{main_8c}\index{src/main.c@{src/main.c}}
+
+
+Le point d\textquotesingle{}entrée de l\textquotesingle{}application.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$sqlite3.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../include/main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/add\+\_\+type\+\_\+vehicule.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/add\+\_\+vehicule.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/fort.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/list\+\_\+types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/list\+\_\+vehicules.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/sqlite3.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/unpark\+\_\+vehicule.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/history.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_aec14e29ffe62f1b971009f46e3b1d916}{print\+\_\+menu}} (void)
+\begin{DoxyCompactList}\small\item\em Affichage du menu principal du programme. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_ae0665038b72011f5c680c660fcb59459}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Le point d\textquotesingle{}entrée de l\textquotesingle{}application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Le point d\textquotesingle{}entrée de l\textquotesingle{}application. 
+
+Contient la définition de la fonction principale, gère la logique de toute l\textquotesingle{}application et les interactions avec l\textquotesingle{}utilisateur.
+
+\begin{DoxyAuthor}{Auteur}
+\href{https://about.me/nightwalker.y}{\texttt{ KOUASSI Yao Kan}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25 Avril 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{main_8c_ae0665038b72011f5c680c660fcb59459}\label{main_8c_ae0665038b72011f5c680c660fcb59459}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Le point d\textquotesingle{}entrée de l\textquotesingle{}application. 
+
+Présente l\textquotesingle{}application et gère les actions de l\textquotesingle{}utilisateur
+
+
+\begin{DoxyParams}{Paramètres}
+{\em argc} & int Le nombre d\textquotesingle{}arguments+1 fournits à l\textquotesingle{}appel en ligne de commande \\
+\hline
+{\em argv} & char$\ast$$\ast$ La liste des arguments fournits à l\textquotesingle{}appel en ligne de commande \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8c_aec14e29ffe62f1b971009f46e3b1d916}\label{main_8c_aec14e29ffe62f1b971009f46e3b1d916}} 
+\index{main.c@{main.c}!print\_menu@{print\_menu}}
+\index{print\_menu@{print\_menu}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{print\_menu()}{print\_menu()}}
+{\footnotesize\ttfamily int print\+\_\+menu (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Affichage du menu principal du programme. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 0 
+\end{DoxyReturn}

@@ -1,0 +1,108 @@
+.TH "src/main.c" 3 "Jeudi 29 Avril 2021" "Version 1.0.0" "Park-Man" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/main.c \- Le point d'entrée de l'application\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <sqlite3\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <ctype\&.h>\fP
+.br
+\fC#include <unistd\&.h>\fP
+.br
+\fC#include '\&.\&./include/main\&.h'\fP
+.br
+\fC#include '\&.\&./include/add_type_vehicule\&.h'\fP
+.br
+\fC#include '\&.\&./include/add_vehicule\&.h'\fP
+.br
+\fC#include '\&.\&./include/fort\&.h'\fP
+.br
+\fC#include '\&.\&./include/list_types\&.h'\fP
+.br
+\fC#include '\&.\&./include/list_vehicules\&.h'\fP
+.br
+\fC#include '\&.\&./include/sqlite3\&.h'\fP
+.br
+\fC#include '\&.\&./include/unpark_vehicule\&.h'\fP
+.br
+\fC#include '\&.\&./include/history\&.h'\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "int \fBprint_menu\fP (void)"
+.br
+.RI "Affichage du menu principal du programme\&. "
+.ti -1c
+.RI "int \fBmain\fP (int argc, char *argv[])"
+.br
+.RI "Le point d'entrée de l'application\&. "
+.in -1c
+.SH "Description détaillée"
+.PP 
+Le point d'entrée de l'application\&. 
+
+Contient la définition de la fonction principale, gère la logique de toute l'application et les interactions avec l'utilisateur\&.
+.PP
+\fBAuteur\fP
+.RS 4
+\fCKOUASSI Yao Kan\fP 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+25 Avril 2021 
+.RE
+.PP
+
+.SH "Documentation des fonctions"
+.PP 
+.SS "main (int argc, char * argv[])"
+
+.PP
+Le point d'entrée de l'application\&. Présente l'application et gère les actions de l'utilisateur
+.PP
+\fBParamètres\fP
+.RS 4
+\fIargc\fP int Le nombre d'arguments+1 fournits à l'appel en ligne de commande 
+.br
+\fIargv\fP char** La liste des arguments fournits à l'appel en ligne de commande 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "int print_menu (void)"
+
+.PP
+Affichage du menu principal du programme\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIvoid\fP 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+int 0 
+.RE
+.PP
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Park-Man à partir du code source\&.

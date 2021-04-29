@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="sqlite3__client_8h" kind="file" language="C++">
+    <compoundname>sqlite3_client.h</compoundname>
+    <includes local="no">sqlite3.h</includes>
+    <includedby refid="add__vehicule_8c" local="yes">src/add_vehicule.c</includedby>
+    <includedby refid="sqlite3__client_8c" local="yes">src/sqlite3_client.c</includedby>
+    <includedby refid="list__vehicules_8c" local="yes">src/list_vehicules.c</includedby>
+    <includedby refid="unpark__vehicule_8c" local="yes">src/unpark_vehicule.c</includedby>
+    <includedby refid="list__types_8c" local="yes">src/list_types.c</includedby>
+    <includedby refid="add__type__vehicule_8c" local="yes">src/add_type_vehicule.c</includedby>
+    <includedby refid="history_8c" local="yes">src/history.c</includedby>
+    <includedby refid="list__types_8h" local="yes">include/list_types.h</includedby>
+    <includedby refid="add__vehicule_8h" local="yes">include/add_vehicule.h</includedby>
+    <includedby refid="add__type__vehicule_8h" local="yes">include/add_type_vehicule.h</includedby>
+    <includedby refid="unpark__vehicule_8h" local="yes">include/unpark_vehicule.h</includedby>
+    <includedby refid="list__vehicules_8h" local="yes">include/list_vehicules.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/sqlite3_client.h</label>
+        <link refid="sqlite3__client_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sqlite3.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="12">
+        <label>include/add_type_vehicule.h</label>
+        <link refid="add__type__vehicule_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>include/add_vehicule.h</label>
+        <link refid="add__vehicule_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>include/list_types.h</label>
+        <link refid="list__types_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>include/list_vehicules.h</label>
+        <link refid="list__vehicules_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/sqlite3_client.h</label>
+        <link refid="sqlite3__client_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>include/unpark_vehicule.h</label>
+        <link refid="unpark__vehicule_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/add_type_vehicule.c</label>
+        <link refid="add__type__vehicule_8c"/>
+      </node>
+      <node id="2">
+        <label>src/add_vehicule.c</label>
+        <link refid="add__vehicule_8c"/>
+      </node>
+      <node id="8">
+        <label>src/history.c</label>
+        <link refid="history_8c"/>
+      </node>
+      <node id="6">
+        <label>src/list_types.c</label>
+        <link refid="list__types_8c"/>
+      </node>
+      <node id="4">
+        <label>src/list_vehicules.c</label>
+        <link refid="list__vehicules_8c"/>
+      </node>
+      <node id="10">
+        <label>src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="3">
+        <label>src/sqlite3_client.c</label>
+        <link refid="sqlite3__client_8c"/>
+      </node>
+      <node id="5">
+        <label>src/unpark_vehicule.c</label>
+        <link refid="unpark__vehicule_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="sqlite3__client_8h_1a43eb1be79ea533680fa91d0bd486db49" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* DB_FILE</definition>
+        <argsstring></argsstring>
+        <name>DB_FILE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Le chemin vers le fichier de base de donnees </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sqlite3_client.h" line="16" column="19" bodyfile="src/sqlite3_client.c" bodystart="11" bodyend="-1" declfile="include/sqlite3_client.h" declline="16" declcolumn="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sqlite3__client_8h_1a876d5723d0511f25736dcd24ef3fd437" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void clear_buffer</definition>
+        <argsstring>(void)</argsstring>
+        <name>clear_buffer</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Nettoie le tampon apres un appel <computeroutput>scanf</computeroutput> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sqlite3_client.h" line="24" column="6" bodyfile="src/sqlite3_client.c" bodystart="13" bodyend="20" declfile="include/sqlite3_client.h" declline="24" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="sqlite3__client_8h_1a29ba0737e871f9becbdf9b18aec433ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* trim</definition>
+        <argsstring>(char *)</argsstring>
+        <name>trim</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sqlite3_client.h" line="34" column="6" bodyfile="src/sqlite3_client.c" bodystart="22" bodyend="34" declfile="include/sqlite3_client.h" declline="34" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="sqlite3__client_8h_1aa59d79b862f7ba5c417e27f14ed04de3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sqlite3 *</type>
+        <definition>sqlite3* connect</definition>
+        <argsstring>(void)</argsstring>
+        <name>connect</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sqlite3* une instance de connexion SQLite3</para>
+</simplesect>
+Teste la connectivite avec la base de donnees et affiche une alerte sur l&apos;etat </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sqlite3_client.h" line="44" column="9" bodyfile="src/sqlite3_client.c" bodystart="36" bodyend="50" declfile="include/sqlite3_client.h" declline="44" declcolumn="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Le client de test de la connectivite avec la base de donnees et les fonctions communes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="author"><para>Groupe 10 MBDS/SIGL </para>
+</simplesect>
+<simplesect kind="date"><para>25 Avril 2021 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sqlite3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="sqlite3__client_8h_1a43eb1be79ea533680fa91d0bd486db49" kindref="member">DB_FILE</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="sqlite3__client_8h_1a876d5723d0511f25736dcd24ef3fd437" kindref="member">clear_buffer</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="sqlite3__client_8h_1a29ba0737e871f9becbdf9b18aec433ec" kindref="member">trim</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">sqlite3*<sp/><ref refid="sqlite3__client_8h_1aa59d79b862f7ba5c417e27f14ed04de3" kindref="member">connect</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+    </programlisting>
+    <location file="include/sqlite3_client.h"/>
+  </compounddef>
+</doxygen>

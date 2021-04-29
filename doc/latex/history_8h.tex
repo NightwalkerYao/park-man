@@ -1,0 +1,166 @@
+\hypertarget{history_8h}{}\doxysection{Référence du fichier include/history.h}
+\label{history_8h}\index{include/history.h@{include/history.h}}
+
+
+Les prototypes des fonctions qui affichent l\textquotesingle{}historique des vehicules.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}fort.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$sqlite3.\+h$>$}\newline
+Graphe des dépendances par inclusion de history.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{history_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{history_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{history_8h_a46729de1c2a66e0860c46894788ed9ba}{history}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{history_8h_a5287b31e345f72dc7408a09ea07bee06}{hparking\+\_\+code}} \mbox{[}20\mbox{]}
+\item 
+unsigned int \mbox{\hyperlink{history_8h_a2b3b6bf255fcf2d98831793c9ce1f88a}{hvehicle\+\_\+id}}
+\item 
+char \mbox{\hyperlink{history_8h_a846cdcb42696f1c2e70fd0b3ba099e8d}{hdate\+\_\+arrivee}} \mbox{[}30\mbox{]}
+\item 
+char \mbox{\hyperlink{history_8h_a7fe506d1028162e9cb90fc4feddc9d75}{hdate\+\_\+sortie}} \mbox{[}30\mbox{]}
+\item 
+unsigned int \mbox{\hyperlink{history_8h_af3d0d13230b471364b17f5e24b10991e}{hvehicle\+\_\+count}}
+\item 
+unsigned int \mbox{\hyperlink{history_8h_a7107390f80beda4dbbda7010c0a0b1cf}{hparking\+\_\+fees}}
+\item 
+char \mbox{\hyperlink{history_8h_af0f141ef259cedfa9994d376b529683a}{hmatricule}} \mbox{[}15\mbox{]}
+\item 
+char \mbox{\hyperlink{history_8h_abc2ca53b6db7be4945e1b3fb54bfda6e}{hclient}} \mbox{[}160\mbox{]}
+\item 
+char \mbox{\hyperlink{history_8h_a643dbcabdf19780be261d54e12a8337f}{hlibelle\+\_\+type}} \mbox{[}100\mbox{]}
+\item 
+unsigned int \mbox{\hyperlink{history_8h_ae03f971ee820f8f14dee149871565b0d}{htarif\+\_\+heure}}
+\item 
+unsigned int \mbox{\hyperlink{history_8h_a253e452fa36f707debb5c0f3e21fd36d}{htarif\+\_\+24}}
+\item 
+unsigned int \mbox{\hyperlink{history_8h_ac8f5cfce512f105e9c0756ffa25b2db6}{hduree}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Les prototypes des fonctions qui affichent l\textquotesingle{}historique des vehicules. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Auteur}
+Groupe 10 MBDS/\+SIGL 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25 Avril 2021
+\end{DoxyDate}
+Contient les prototypes des fonctions du \mbox{\hyperlink{history_8c}{src/history.\+c}} 
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{history_8h_a46729de1c2a66e0860c46894788ed9ba}\label{history_8h_a46729de1c2a66e0860c46894788ed9ba}} 
+\index{history.h@{history.h}!history@{history}}
+\index{history@{history}!history.h@{history.h}}
+\doxysubsubsection{\texorpdfstring{history()}{history()}}
+{\footnotesize\ttfamily void history (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Recuperer et affiche l\textquotesingle{}historique des vehicules qui sont sortis du parking
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{history_8h_abc2ca53b6db7be4945e1b3fb54bfda6e}\label{history_8h_abc2ca53b6db7be4945e1b3fb54bfda6e}} 
+\index{history.h@{history.h}!hclient@{hclient}}
+\index{hclient@{hclient}!history.h@{history.h}}
+\doxysubsubsection{\texorpdfstring{hclient}{hclient}}
+{\footnotesize\ttfamily char hclient\mbox{[}160\mbox{]}}
+
+\mbox{\Hypertarget{history_8h_a846cdcb42696f1c2e70fd0b3ba099e8d}\label{history_8h_a846cdcb42696f1c2e70fd0b3ba099e8d}} 
+\index{history.h@{history.h}!hdate\_arrivee@{hdate\_arrivee}}
+\index{hdate\_arrivee@{hdate\_arrivee}!history.h@{history.h}}
+\doxysubsubsection{\texorpdfstring{hdate\_arrivee}{hdate\_arrivee}}
+{\footnotesize\ttfamily char hdate\+\_\+arrivee\mbox{[}30\mbox{]}}
+
+\mbox{\Hypertarget{history_8h_a7fe506d1028162e9cb90fc4feddc9d75}\label{history_8h_a7fe506d1028162e9cb90fc4feddc9d75}} 
+\index{history.h@{history.h}!hdate\_sortie@{hdate\_sortie}}
+\index{hdate\_sortie@{hdate\_sortie}!history.h@{history.h}}
+\doxysubsubsection{\texorpdfstring{hdate\_sortie}{hdate\_sortie}}
+{\footnotesize\ttfamily char hdate\+\_\+sortie\mbox{[}30\mbox{]}}
+
+\mbox{\Hypertarget{history_8h_ac8f5cfce512f105e9c0756ffa25b2db6}\label{history_8h_ac8f5cfce512f105e9c0756ffa25b2db6}} 
+\index{history.h@{history.h}!hduree@{hduree}}
+\index{hduree@{hduree}!history.h@{history.h}}
+\doxysubsubsection{\texorpdfstring{hduree}{hduree}}
+{\footnotesize\ttfamily unsigned int hduree}
+
+\mbox{\Hypertarget{history_8h_a643dbcabdf19780be261d54e12a8337f}\label{history_8h_a643dbcabdf19780be261d54e12a8337f}} 
+\index{history.h@{history.h}!hlibelle\_type@{hlibelle\_type}}
+\index{hlibelle\_type@{hlibelle\_type}!history.h@{history.h}}
+\doxysubsubsection{\texorpdfstring{hlibelle\_type}{hlibelle\_type}}
+{\footnotesize\ttfamily char hlibelle\+\_\+type\mbox{[}100\mbox{]}}
+
+\mbox{\Hypertarget{history_8h_af0f141ef259cedfa9994d376b529683a}\label{history_8h_af0f141ef259cedfa9994d376b529683a}} 
+\index{history.h@{history.h}!hmatricule@{hmatricule}}
+\index{hmatricule@{hmatricule}!history.h@{history.h}}
+\doxysubsubsection{\texorpdfstring{hmatricule}{hmatricule}}
+{\footnotesize\ttfamily char hmatricule\mbox{[}15\mbox{]}}
+
+\mbox{\Hypertarget{history_8h_a5287b31e345f72dc7408a09ea07bee06}\label{history_8h_a5287b31e345f72dc7408a09ea07bee06}} 
+\index{history.h@{history.h}!hparking\_code@{hparking\_code}}
+\index{hparking\_code@{hparking\_code}!history.h@{history.h}}
+\doxysubsubsection{\texorpdfstring{hparking\_code}{hparking\_code}}
+{\footnotesize\ttfamily char hparking\+\_\+code\mbox{[}20\mbox{]}}
+
+\mbox{\Hypertarget{history_8h_a7107390f80beda4dbbda7010c0a0b1cf}\label{history_8h_a7107390f80beda4dbbda7010c0a0b1cf}} 
+\index{history.h@{history.h}!hparking\_fees@{hparking\_fees}}
+\index{hparking\_fees@{hparking\_fees}!history.h@{history.h}}
+\doxysubsubsection{\texorpdfstring{hparking\_fees}{hparking\_fees}}
+{\footnotesize\ttfamily unsigned int hparking\+\_\+fees}
+
+\mbox{\Hypertarget{history_8h_a253e452fa36f707debb5c0f3e21fd36d}\label{history_8h_a253e452fa36f707debb5c0f3e21fd36d}} 
+\index{history.h@{history.h}!htarif\_24@{htarif\_24}}
+\index{htarif\_24@{htarif\_24}!history.h@{history.h}}
+\doxysubsubsection{\texorpdfstring{htarif\_24}{htarif\_24}}
+{\footnotesize\ttfamily unsigned int htarif\+\_\+24}
+
+\mbox{\Hypertarget{history_8h_ae03f971ee820f8f14dee149871565b0d}\label{history_8h_ae03f971ee820f8f14dee149871565b0d}} 
+\index{history.h@{history.h}!htarif\_heure@{htarif\_heure}}
+\index{htarif\_heure@{htarif\_heure}!history.h@{history.h}}
+\doxysubsubsection{\texorpdfstring{htarif\_heure}{htarif\_heure}}
+{\footnotesize\ttfamily unsigned int htarif\+\_\+heure}
+
+\mbox{\Hypertarget{history_8h_af3d0d13230b471364b17f5e24b10991e}\label{history_8h_af3d0d13230b471364b17f5e24b10991e}} 
+\index{history.h@{history.h}!hvehicle\_count@{hvehicle\_count}}
+\index{hvehicle\_count@{hvehicle\_count}!history.h@{history.h}}
+\doxysubsubsection{\texorpdfstring{hvehicle\_count}{hvehicle\_count}}
+{\footnotesize\ttfamily unsigned int hvehicle\+\_\+count}
+
+\mbox{\Hypertarget{history_8h_a2b3b6bf255fcf2d98831793c9ce1f88a}\label{history_8h_a2b3b6bf255fcf2d98831793c9ce1f88a}} 
+\index{history.h@{history.h}!hvehicle\_id@{hvehicle\_id}}
+\index{hvehicle\_id@{hvehicle\_id}!history.h@{history.h}}
+\doxysubsubsection{\texorpdfstring{hvehicle\_id}{hvehicle\_id}}
+{\footnotesize\ttfamily unsigned int hvehicle\+\_\+id}
+

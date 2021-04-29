@@ -1,0 +1,51 @@
+.TH "f_string_view" 3 "Jeudi 29 Avril 2021" "Version 1.0.0" "Park-Man" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+f_string_view
+.SH SYNOPSIS
+.br
+.PP
+.SS "Champs de données"
+
+.in +1c
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   const char * \fBcstr\fP"
+.br
+.ti -1c
+.RI "   const wchar_t * \fBwstr\fP"
+.br
+.ti -1c
+.RI "   const void * \fBu8str\fP"
+.br
+.ti -1c
+.RI "   const void * \fBdata\fP"
+.br
+.ti -1c
+.RI "} \fBu\fP"
+.br
+.ti -1c
+.RI "enum \fBf_string_type\fP \fBtype\fP"
+.br
+.in -1c
+.SH "Documentation des champs"
+.PP 
+.SS "const char* cstr"
+
+.SS "const void* data"
+
+.SS "enum \fBf_string_type\fP type"
+
+.SS " u { \&.\&.\&. } union "
+
+.SS "const void* u8str"
+
+.SS "const wchar_t* wstr"
+
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Park-Man à partir du code source\&.

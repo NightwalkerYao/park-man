@@ -1,0 +1,473 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="unpark__vehicule_8h" kind="file" language="C++">
+    <compoundname>unpark_vehicule.h</compoundname>
+    <includes local="no">sqlite3.h</includes>
+    <includes refid="sqlite3__client_8h" local="yes">sqlite3_client.h</includes>
+    <includedby refid="unpark__vehicule_8c" local="yes">src/unpark_vehicule.c</includedby>
+    <includedby refid="main_8c" local="yes">src/main.c</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>sqlite3_client.h</label>
+        <link refid="sqlite3__client_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/unpark_vehicule.h</label>
+        <link refid="unpark__vehicule_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sqlite3.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/unpark_vehicule.h</label>
+        <link refid="unpark__vehicule_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="2">
+        <label>src/unpark_vehicule.c</label>
+        <link refid="unpark__vehicule_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="unpark__vehicule_8h_1a4d8cb59749f3c45cb059c431d7fe0015" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char parking_code[20]</definition>
+        <argsstring>[20]</argsstring>
+        <name>parking_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/unpark_vehicule.h" line="14" column="6" bodyfile="include/unpark_vehicule.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8h_1aece673c2c99f3121f07ae6d1352a87ed" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int vehicle_id</definition>
+        <argsstring></argsstring>
+        <name>vehicle_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/unpark_vehicule.h" line="15" column="14" bodyfile="include/unpark_vehicule.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8h_1a81563164bd30213becd02a2287c2b46f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char date_arrivee[30]</definition>
+        <argsstring>[30]</argsstring>
+        <name>date_arrivee</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/unpark_vehicule.h" line="16" column="6" bodyfile="include/unpark_vehicule.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8h_1a7faeb62680eb67042dfff3997daeadf0" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char date_sortie[30]</definition>
+        <argsstring>[30]</argsstring>
+        <name>date_sortie</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/unpark_vehicule.h" line="17" column="6" bodyfile="include/unpark_vehicule.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8h_1a0b1bf0b5477d4169420aa253289439a3" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int vehicle_count</definition>
+        <argsstring></argsstring>
+        <name>vehicle_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/unpark_vehicule.h" line="18" column="14" bodyfile="include/unpark_vehicule.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8h_1a7dedc33fab2cf416a7bc806d12ba5c7f" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int parking_fees</definition>
+        <argsstring></argsstring>
+        <name>parking_fees</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/unpark_vehicule.h" line="19" column="14" bodyfile="include/unpark_vehicule.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8h_1ac7863d04cd21f96c24bd62c2ee119b3c" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char matricule[15]</definition>
+        <argsstring>[15]</argsstring>
+        <name>matricule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/unpark_vehicule.h" line="20" column="6" bodyfile="include/unpark_vehicule.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8h_1a0af1ce64b9bf090b86a066728c9e64fe" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char client[160]</definition>
+        <argsstring>[160]</argsstring>
+        <name>client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/unpark_vehicule.h" line="21" column="6" bodyfile="include/unpark_vehicule.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8h_1a1ecaa681517f32b13670090d5bc6ad4e" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char libelle_type[100]</definition>
+        <argsstring>[100]</argsstring>
+        <name>libelle_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/unpark_vehicule.h" line="22" column="6" bodyfile="include/unpark_vehicule.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8h_1a868a41ece38d5d51819e2527a256579e" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int tarif_heure</definition>
+        <argsstring></argsstring>
+        <name>tarif_heure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/unpark_vehicule.h" line="23" column="14" bodyfile="include/unpark_vehicule.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8h_1a5c6a079f8b2d7edea433d84b0e83acc6" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int tarif_24</definition>
+        <argsstring></argsstring>
+        <name>tarif_24</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/unpark_vehicule.h" line="24" column="14" bodyfile="include/unpark_vehicule.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unpark__vehicule_8h_1a607ea88e24e4e7d0462b9653bd63e323" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int duree</definition>
+        <argsstring></argsstring>
+        <name>duree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/unpark_vehicule.h" line="25" column="14" bodyfile="include/unpark_vehicule.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="unpark__vehicule_8h_1ab6f02fa3242376ca63e01c1b670d0d5e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int callback_unpark</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>callback_unpark</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback exécutée à la requête de sortie de vehicules</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NotUsed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>void * </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>azColName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/unpark_vehicule.h" line="36" column="12" declfile="include/unpark_vehicule.h" declline="36" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="unpark__vehicule_8h_1ab94712b764d11cd859c1097c0c7b0d84" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int callback_count_vehicle</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>callback_count_vehicle</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback exécutée à la requête de comptage de vehicule</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NotUsed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>void * </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>azColName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/unpark_vehicule.h" line="47" column="12" declfile="include/unpark_vehicule.h" declline="47" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="unpark__vehicule_8h_1a21ec9a7e303e3e06bb88483d942fb427" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int callback_get_parked_vehicle</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>callback_get_parked_vehicle</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback exécutée à la requête de recuperation de vehicule vehicule</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NotUsed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>void * </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>azColName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/unpark_vehicule.h" line="58" column="12" declfile="include/unpark_vehicule.h" declline="58" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="unpark__vehicule_8h_1a5c8b30bf517e8a994c502c089570ef54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void unpark_vehicle</definition>
+        <argsstring>(void)</argsstring>
+        <name>unpark_vehicle</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sort un vehicule du parking avec facture</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/unpark_vehicule.h" line="66" column="6" bodyfile="src/unpark_vehicule.c" bodystart="58" bodyend="161" declfile="include/unpark_vehicule.h" declline="66" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Les prototypes des fonctions qui sortent des vehicules du parking. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="author"><para>Groupe 10 MBDS/SIGL </para>
+</simplesect>
+<simplesect kind="date"><para>25 Avril 2021</para>
+</simplesect>
+Contient les prototypes des fonctions du <ref refid="unpark__vehicule_8c" kindref="compound">src/unpark_vehicule.c</ref> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sqlite3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sqlite3__client_8h" kindref="compound">sqlite3_client.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="unpark__vehicule_8h_1a4d8cb59749f3c45cb059c431d7fe0015" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8h_1a4d8cb59749f3c45cb059c431d7fe0015" kindref="member">parking_code</ref>[20];</highlight></codeline>
+<codeline lineno="15" refid="unpark__vehicule_8h_1aece673c2c99f3121f07ae6d1352a87ed" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8h_1aece673c2c99f3121f07ae6d1352a87ed" kindref="member">vehicle_id</ref>;</highlight></codeline>
+<codeline lineno="16" refid="unpark__vehicule_8h_1a81563164bd30213becd02a2287c2b46f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8h_1a81563164bd30213becd02a2287c2b46f" kindref="member">date_arrivee</ref>[30];</highlight></codeline>
+<codeline lineno="17" refid="unpark__vehicule_8h_1a7faeb62680eb67042dfff3997daeadf0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8h_1a7faeb62680eb67042dfff3997daeadf0" kindref="member">date_sortie</ref>[30];</highlight></codeline>
+<codeline lineno="18" refid="unpark__vehicule_8h_1a0b1bf0b5477d4169420aa253289439a3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8h_1a0b1bf0b5477d4169420aa253289439a3" kindref="member">vehicle_count</ref>;</highlight></codeline>
+<codeline lineno="19" refid="unpark__vehicule_8h_1a7dedc33fab2cf416a7bc806d12ba5c7f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8h_1a7dedc33fab2cf416a7bc806d12ba5c7f" kindref="member">parking_fees</ref>;</highlight></codeline>
+<codeline lineno="20" refid="unpark__vehicule_8h_1ac7863d04cd21f96c24bd62c2ee119b3c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8h_1ac7863d04cd21f96c24bd62c2ee119b3c" kindref="member">matricule</ref>[15];</highlight></codeline>
+<codeline lineno="21" refid="unpark__vehicule_8h_1a0af1ce64b9bf090b86a066728c9e64fe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8h_1a0af1ce64b9bf090b86a066728c9e64fe" kindref="member">client</ref>[160];</highlight></codeline>
+<codeline lineno="22" refid="unpark__vehicule_8h_1a1ecaa681517f32b13670090d5bc6ad4e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8h_1a1ecaa681517f32b13670090d5bc6ad4e" kindref="member">libelle_type</ref>[100];</highlight></codeline>
+<codeline lineno="23" refid="unpark__vehicule_8h_1a868a41ece38d5d51819e2527a256579e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8h_1a868a41ece38d5d51819e2527a256579e" kindref="member">tarif_heure</ref>;</highlight></codeline>
+<codeline lineno="24" refid="unpark__vehicule_8h_1a5c6a079f8b2d7edea433d84b0e83acc6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8h_1a5c6a079f8b2d7edea433d84b0e83acc6" kindref="member">tarif_24</ref>;</highlight></codeline>
+<codeline lineno="25" refid="unpark__vehicule_8h_1a607ea88e24e4e7d0462b9653bd63e323" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8h_1a607ea88e24e4e7d0462b9653bd63e323" kindref="member">duree</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>callback_unpark(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>callback_count_vehicle(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>callback_get_parked_vehicle(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="unpark__vehicule_8h_1a5c8b30bf517e8a994c502c089570ef54" kindref="member">unpark_vehicle</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+    </programlisting>
+    <location file="include/unpark_vehicule.h"/>
+  </compounddef>
+</doxygen>

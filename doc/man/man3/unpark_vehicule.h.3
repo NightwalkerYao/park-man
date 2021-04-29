@@ -1,0 +1,128 @@
+.TH "include/unpark_vehicule.h" 3 "Jeudi 29 Avril 2021" "Version 1.0.0" "Park-Man" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/unpark_vehicule.h \- Les prototypes des fonctions qui sortent des vehicules du parking\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <sqlite3\&.h>\fP
+.br
+\fC#include 'sqlite3_client\&.h'\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBunpark_vehicle\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "char \fBparking_code\fP [20]"
+.br
+.ti -1c
+.RI "unsigned int \fBvehicle_id\fP"
+.br
+.ti -1c
+.RI "char \fBdate_arrivee\fP [30]"
+.br
+.ti -1c
+.RI "char \fBdate_sortie\fP [30]"
+.br
+.ti -1c
+.RI "unsigned int \fBvehicle_count\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBparking_fees\fP"
+.br
+.ti -1c
+.RI "char \fBmatricule\fP [15]"
+.br
+.ti -1c
+.RI "char \fBclient\fP [160]"
+.br
+.ti -1c
+.RI "char \fBlibelle_type\fP [100]"
+.br
+.ti -1c
+.RI "unsigned int \fBtarif_heure\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBtarif_24\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBduree\fP"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Les prototypes des fonctions qui sortent des vehicules du parking\&. 
+
+
+.PP
+\fBVersion\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+\fBAuteur\fP
+.RS 4
+Groupe 10 MBDS/SIGL 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+25 Avril 2021
+.RE
+.PP
+Contient les prototypes des fonctions du \fBsrc/unpark_vehicule\&.c\fP 
+.SH "Documentation des fonctions"
+.PP 
+.SS "void unpark_vehicle (void)"
+Sort un vehicule du parking avec facture
+.PP
+\fBParamètres\fP
+.RS 4
+\fIvoid\fP 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SH "Documentation des variables"
+.PP 
+.SS "char client[160]"
+
+.SS "char date_arrivee[30]"
+
+.SS "char date_sortie[30]"
+
+.SS "unsigned int duree"
+
+.SS "char libelle_type[100]"
+
+.SS "char matricule[15]"
+
+.SS "char parking_code[20]"
+
+.SS "unsigned int parking_fees"
+
+.SS "unsigned int tarif_24"
+
+.SS "unsigned int tarif_heure"
+
+.SS "unsigned int vehicle_count"
+
+.SS "unsigned int vehicle_id"
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Park-Man à partir du code source\&.

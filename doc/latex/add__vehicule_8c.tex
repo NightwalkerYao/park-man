@@ -1,0 +1,114 @@
+\hypertarget{add__vehicule_8c}{}\doxysection{Référence du fichier src/add\+\_\+vehicule.c}
+\label{add__vehicule_8c}\index{src/add\_vehicule.c@{src/add\_vehicule.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$sqlite3.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../include/sqlite3\+\_\+client.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/add\+\_\+vehicule.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de add\+\_\+vehicule.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{add__vehicule_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{add__vehicule_8c_a8b038f59414c66018cbcfec4b808ddbd}{\+\_\+\+ADD\+\_\+\+VEHICULE\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{add__vehicule_8c_aa79e2615696ec52a465022797c5a795d}{add\+\_\+vehicule}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{add__vehicule_8c_a0ff8a4aa9ae95336e04abfede9be1c34}{count\+\_\+types}} = 0
+\item 
+int \mbox{\hyperlink{add__vehicule_8c_a9d07b6ffbf687fc270aa02db5f096149}{last\+\_\+vehicle\+\_\+id}}
+\item 
+char \mbox{\hyperlink{add__vehicule_8c_a47a6ef05e47156d0b64ac2f27de81d24}{date\+\_\+arrivee}} \mbox{[}21\mbox{]}
+\item 
+int \mbox{\hyperlink{add__vehicule_8c_a878236ffade15f309bbd38fa1d269383}{selected\+\_\+vtype\+\_\+id}}
+\item 
+int \mbox{\hyperlink{add__vehicule_8c_af44eb68ab71de443a4d04977048e88a3}{nbre\+\_\+total\+\_\+place}}
+\item 
+int \mbox{\hyperlink{add__vehicule_8c_ae290e09b8ceb4dd9da1d5e1a2845afdd}{places\+\_\+dispo}}
+\item 
+int \mbox{\hyperlink{add__vehicule_8c_a477b4ab9231f4e5c80ca11bbec280211}{mutable}}
+\item 
+char \mbox{\hyperlink{add__vehicule_8c_a6a9546295e8e071f95a2f69658f8376e}{selected\+\_\+vtype\+\_\+name}} \mbox{[}160\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des macros}
+\mbox{\Hypertarget{add__vehicule_8c_a8b038f59414c66018cbcfec4b808ddbd}\label{add__vehicule_8c_a8b038f59414c66018cbcfec4b808ddbd}} 
+\index{add\_vehicule.c@{add\_vehicule.c}!\_ADD\_VEHICULE\_@{\_ADD\_VEHICULE\_}}
+\index{\_ADD\_VEHICULE\_@{\_ADD\_VEHICULE\_}!add\_vehicule.c@{add\_vehicule.c}}
+\doxysubsubsection{\texorpdfstring{\_ADD\_VEHICULE\_}{\_ADD\_VEHICULE\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+ADD\+\_\+\+VEHICULE\+\_\+}
+
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{add__vehicule_8c_aa79e2615696ec52a465022797c5a795d}\label{add__vehicule_8c_aa79e2615696ec52a465022797c5a795d}} 
+\index{add\_vehicule.c@{add\_vehicule.c}!add\_vehicule@{add\_vehicule}}
+\index{add\_vehicule@{add\_vehicule}!add\_vehicule.c@{add\_vehicule.c}}
+\doxysubsubsection{\texorpdfstring{add\_vehicule()}{add\_vehicule()}}
+{\footnotesize\ttfamily void add\+\_\+vehicule (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{add__vehicule_8c_a0ff8a4aa9ae95336e04abfede9be1c34}\label{add__vehicule_8c_a0ff8a4aa9ae95336e04abfede9be1c34}} 
+\index{add\_vehicule.c@{add\_vehicule.c}!count\_types@{count\_types}}
+\index{count\_types@{count\_types}!add\_vehicule.c@{add\_vehicule.c}}
+\doxysubsubsection{\texorpdfstring{count\_types}{count\_types}}
+{\footnotesize\ttfamily int count\+\_\+types = 0}
+
+\mbox{\Hypertarget{add__vehicule_8c_a47a6ef05e47156d0b64ac2f27de81d24}\label{add__vehicule_8c_a47a6ef05e47156d0b64ac2f27de81d24}} 
+\index{add\_vehicule.c@{add\_vehicule.c}!date\_arrivee@{date\_arrivee}}
+\index{date\_arrivee@{date\_arrivee}!add\_vehicule.c@{add\_vehicule.c}}
+\doxysubsubsection{\texorpdfstring{date\_arrivee}{date\_arrivee}}
+{\footnotesize\ttfamily char date\+\_\+arrivee\mbox{[}21\mbox{]}}
+
+\mbox{\Hypertarget{add__vehicule_8c_a9d07b6ffbf687fc270aa02db5f096149}\label{add__vehicule_8c_a9d07b6ffbf687fc270aa02db5f096149}} 
+\index{add\_vehicule.c@{add\_vehicule.c}!last\_vehicle\_id@{last\_vehicle\_id}}
+\index{last\_vehicle\_id@{last\_vehicle\_id}!add\_vehicule.c@{add\_vehicule.c}}
+\doxysubsubsection{\texorpdfstring{last\_vehicle\_id}{last\_vehicle\_id}}
+{\footnotesize\ttfamily int last\+\_\+vehicle\+\_\+id}
+
+\mbox{\Hypertarget{add__vehicule_8c_a477b4ab9231f4e5c80ca11bbec280211}\label{add__vehicule_8c_a477b4ab9231f4e5c80ca11bbec280211}} 
+\index{add\_vehicule.c@{add\_vehicule.c}!mutable@{mutable}}
+\index{mutable@{mutable}!add\_vehicule.c@{add\_vehicule.c}}
+\doxysubsubsection{\texorpdfstring{mutable}{mutable}}
+{\footnotesize\ttfamily int mutable}
+
+\mbox{\Hypertarget{add__vehicule_8c_af44eb68ab71de443a4d04977048e88a3}\label{add__vehicule_8c_af44eb68ab71de443a4d04977048e88a3}} 
+\index{add\_vehicule.c@{add\_vehicule.c}!nbre\_total\_place@{nbre\_total\_place}}
+\index{nbre\_total\_place@{nbre\_total\_place}!add\_vehicule.c@{add\_vehicule.c}}
+\doxysubsubsection{\texorpdfstring{nbre\_total\_place}{nbre\_total\_place}}
+{\footnotesize\ttfamily int nbre\+\_\+total\+\_\+place}
+
+\mbox{\Hypertarget{add__vehicule_8c_ae290e09b8ceb4dd9da1d5e1a2845afdd}\label{add__vehicule_8c_ae290e09b8ceb4dd9da1d5e1a2845afdd}} 
+\index{add\_vehicule.c@{add\_vehicule.c}!places\_dispo@{places\_dispo}}
+\index{places\_dispo@{places\_dispo}!add\_vehicule.c@{add\_vehicule.c}}
+\doxysubsubsection{\texorpdfstring{places\_dispo}{places\_dispo}}
+{\footnotesize\ttfamily int places\+\_\+dispo}
+
+\mbox{\Hypertarget{add__vehicule_8c_a878236ffade15f309bbd38fa1d269383}\label{add__vehicule_8c_a878236ffade15f309bbd38fa1d269383}} 
+\index{add\_vehicule.c@{add\_vehicule.c}!selected\_vtype\_id@{selected\_vtype\_id}}
+\index{selected\_vtype\_id@{selected\_vtype\_id}!add\_vehicule.c@{add\_vehicule.c}}
+\doxysubsubsection{\texorpdfstring{selected\_vtype\_id}{selected\_vtype\_id}}
+{\footnotesize\ttfamily int selected\+\_\+vtype\+\_\+id}
+
+\mbox{\Hypertarget{add__vehicule_8c_a6a9546295e8e071f95a2f69658f8376e}\label{add__vehicule_8c_a6a9546295e8e071f95a2f69658f8376e}} 
+\index{add\_vehicule.c@{add\_vehicule.c}!selected\_vtype\_name@{selected\_vtype\_name}}
+\index{selected\_vtype\_name@{selected\_vtype\_name}!add\_vehicule.c@{add\_vehicule.c}}
+\doxysubsubsection{\texorpdfstring{selected\_vtype\_name}{selected\_vtype\_name}}
+{\footnotesize\ttfamily char selected\+\_\+vtype\+\_\+name\mbox{[}160\mbox{]}}
+

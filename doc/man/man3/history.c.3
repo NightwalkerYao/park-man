@@ -1,0 +1,126 @@
+.TH "src/history.c" 3 "Jeudi 29 Avril 2021" "Version 1.0.0" "Park-Man" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/history.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <sqlite3\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include '\&.\&./include/fort\&.h'\fP
+.br
+\fC#include '\&.\&./include/sqlite3_client\&.h'\fP
+.br
+\fC#include '\&.\&./include/history\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB_HISTORY_\fP"
+.br
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBhistory\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "char \fBhparking_code\fP [20]"
+.br
+.ti -1c
+.RI "unsigned int \fBhvehicle_id\fP"
+.br
+.ti -1c
+.RI "char \fBhdate_arrivee\fP [30]"
+.br
+.ti -1c
+.RI "char \fBhdate_sortie\fP [30]"
+.br
+.ti -1c
+.RI "unsigned int \fBhvehicle_count\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBhparking_fees\fP"
+.br
+.ti -1c
+.RI "char \fBhmatricule\fP [15]"
+.br
+.ti -1c
+.RI "char \fBhclient\fP [160]"
+.br
+.ti -1c
+.RI "char \fBhlibelle_type\fP [100]"
+.br
+.ti -1c
+.RI "unsigned int \fBhtarif_heure\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBhtarif_24\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBhduree\fP"
+.br
+.in -1c
+.SH "Documentation des macros"
+.PP 
+.SS "#define _HISTORY_"
+
+.SH "Documentation des fonctions"
+.PP 
+.SS "void history ()"
+Recuperer et affiche l'historique des vehicules qui sont sortis du parking
+.PP
+\fBParamètres\fP
+.RS 4
+\fIvoid\fP 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SH "Documentation des variables"
+.PP 
+.SS "char hclient[160]"
+
+.SS "char hdate_arrivee[30]"
+
+.SS "char hdate_sortie[30]"
+
+.SS "unsigned int hduree"
+
+.SS "char hlibelle_type[100]"
+
+.SS "char hmatricule[15]"
+
+.SS "char hparking_code[20]"
+
+.SS "unsigned int hparking_fees"
+
+.SS "unsigned int htarif_24"
+
+.SS "unsigned int htarif_heure"
+
+.SS "unsigned int hvehicle_count"
+
+.SS "unsigned int hvehicle_id"
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Park-Man à partir du code source\&.

@@ -1,0 +1,454 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="history_8h" kind="file" language="C++">
+    <compoundname>history.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="fort_8h" local="yes">fort.h</includes>
+    <includes local="no">sqlite3.h</includes>
+    <includedby refid="history_8c" local="yes">src/history.c</includedby>
+    <includedby refid="main_8c" local="yes">src/main.c</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>fort.h</label>
+        <link refid="fort_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/history.h</label>
+        <link refid="history_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>limits.h</label>
+      </node>
+      <node id="7">
+        <label>sqlite3.h</label>
+      </node>
+      <node id="4">
+        <label>stddef.h</label>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/history.h</label>
+        <link refid="history_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/history.c</label>
+        <link refid="history_8c"/>
+      </node>
+      <node id="3">
+        <label>src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="history_8h_1adf122296c5cf5816e18966e23e4ef4f8" prot="public" static="yes" mutable="no">
+        <type><ref refid="fort_8h_1a6307d2840e0e96880c4d0f04b12a2187" kindref="member">ft_table_t</ref> *</type>
+        <definition>ft_table_t* table</definition>
+        <argsstring></argsstring>
+        <name>table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/history.h" line="14" column="19" bodyfile="include/history.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8h_1acf6837bb114fcf747a5c0ab27348b3f6" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int vehicles_count</definition>
+        <argsstring></argsstring>
+        <name>vehicles_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/history.h" line="15" column="12" bodyfile="include/history.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8h_1a5287b31e345f72dc7408a09ea07bee06" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hparking_code[20]</definition>
+        <argsstring>[20]</argsstring>
+        <name>hparking_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/history.h" line="18" column="6" bodyfile="include/history.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8h_1a2b3b6bf255fcf2d98831793c9ce1f88a" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int hvehicle_id</definition>
+        <argsstring></argsstring>
+        <name>hvehicle_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/history.h" line="19" column="14" bodyfile="include/history.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8h_1a846cdcb42696f1c2e70fd0b3ba099e8d" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hdate_arrivee[30]</definition>
+        <argsstring>[30]</argsstring>
+        <name>hdate_arrivee</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/history.h" line="20" column="6" bodyfile="include/history.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8h_1a7fe506d1028162e9cb90fc4feddc9d75" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hdate_sortie[30]</definition>
+        <argsstring>[30]</argsstring>
+        <name>hdate_sortie</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/history.h" line="21" column="6" bodyfile="include/history.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8h_1af3d0d13230b471364b17f5e24b10991e" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int hvehicle_count</definition>
+        <argsstring></argsstring>
+        <name>hvehicle_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/history.h" line="22" column="14" bodyfile="include/history.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8h_1a7107390f80beda4dbbda7010c0a0b1cf" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int hparking_fees</definition>
+        <argsstring></argsstring>
+        <name>hparking_fees</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/history.h" line="23" column="14" bodyfile="include/history.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8h_1af0f141ef259cedfa9994d376b529683a" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hmatricule[15]</definition>
+        <argsstring>[15]</argsstring>
+        <name>hmatricule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/history.h" line="24" column="6" bodyfile="include/history.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8h_1abc2ca53b6db7be4945e1b3fb54bfda6e" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hclient[160]</definition>
+        <argsstring>[160]</argsstring>
+        <name>hclient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/history.h" line="25" column="6" bodyfile="include/history.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8h_1a643dbcabdf19780be261d54e12a8337f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hlibelle_type[100]</definition>
+        <argsstring>[100]</argsstring>
+        <name>hlibelle_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/history.h" line="26" column="6" bodyfile="include/history.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8h_1ae03f971ee820f8f14dee149871565b0d" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int htarif_heure</definition>
+        <argsstring></argsstring>
+        <name>htarif_heure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/history.h" line="27" column="14" bodyfile="include/history.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8h_1a253e452fa36f707debb5c0f3e21fd36d" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int htarif_24</definition>
+        <argsstring></argsstring>
+        <name>htarif_24</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/history.h" line="28" column="14" bodyfile="include/history.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="history_8h_1ac8f5cfce512f105e9c0756ffa25b2db6" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int hduree</definition>
+        <argsstring></argsstring>
+        <name>hduree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/history.h" line="29" column="14" bodyfile="include/history.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="history_8h_1a9eb665af857bc3d71c14bbe42efdce8d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int callback_print_vehicles_count_h</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>callback_print_vehicles_count_h</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback exécutée à la requête de comptage des vehicules</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NotUsed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>void * </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>azColName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/history.h" line="40" column="12" declfile="include/history.h" declline="40" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="history_8h_1a71cd46ea2444c1ca051ef1adb5823af0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int callback_print_vehicles_h</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>callback_print_vehicles_h</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback exécutée à la requête de recuperation d&apos;un vehicule</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NotUsed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>void * </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>azColName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/history.h" line="51" column="12" declfile="include/history.h" declline="51" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="history_8h_1a46729de1c2a66e0860c46894788ed9ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void history</definition>
+        <argsstring>()</argsstring>
+        <name>history</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Recuperer et affiche l&apos;historique des vehicules qui sont sortis du parking</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/history.h" line="59" column="6" bodyfile="src/history.c" bodystart="64" bodyend="91" declfile="include/history.h" declline="59" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Les prototypes des fonctions qui affichent l&apos;historique des vehicules. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="author"><para>Groupe 10 MBDS/SIGL </para>
+</simplesect>
+<simplesect kind="date"><para>25 Avril 2021</para>
+</simplesect>
+Contient les prototypes des fonctions du <ref refid="history_8c" kindref="compound">src/history.c</ref> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="fort_8h" kindref="compound">fort.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sqlite3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structft__table" kindref="compound">ft_table_t</ref><sp/>*table;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vehicles_count;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="history_8h_1a5287b31e345f72dc7408a09ea07bee06" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="history_8h_1a5287b31e345f72dc7408a09ea07bee06" kindref="member">hparking_code</ref>[20];</highlight></codeline>
+<codeline lineno="19" refid="history_8h_1a2b3b6bf255fcf2d98831793c9ce1f88a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="history_8h_1a2b3b6bf255fcf2d98831793c9ce1f88a" kindref="member">hvehicle_id</ref>;</highlight></codeline>
+<codeline lineno="20" refid="history_8h_1a846cdcb42696f1c2e70fd0b3ba099e8d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="history_8h_1a846cdcb42696f1c2e70fd0b3ba099e8d" kindref="member">hdate_arrivee</ref>[30];</highlight></codeline>
+<codeline lineno="21" refid="history_8h_1a7fe506d1028162e9cb90fc4feddc9d75" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="history_8h_1a7fe506d1028162e9cb90fc4feddc9d75" kindref="member">hdate_sortie</ref>[30];</highlight></codeline>
+<codeline lineno="22" refid="history_8h_1af3d0d13230b471364b17f5e24b10991e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="history_8h_1af3d0d13230b471364b17f5e24b10991e" kindref="member">hvehicle_count</ref>;</highlight></codeline>
+<codeline lineno="23" refid="history_8h_1a7107390f80beda4dbbda7010c0a0b1cf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="history_8h_1a7107390f80beda4dbbda7010c0a0b1cf" kindref="member">hparking_fees</ref>;</highlight></codeline>
+<codeline lineno="24" refid="history_8h_1af0f141ef259cedfa9994d376b529683a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="history_8h_1af0f141ef259cedfa9994d376b529683a" kindref="member">hmatricule</ref>[15];</highlight></codeline>
+<codeline lineno="25" refid="history_8h_1abc2ca53b6db7be4945e1b3fb54bfda6e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="history_8h_1abc2ca53b6db7be4945e1b3fb54bfda6e" kindref="member">hclient</ref>[160];</highlight></codeline>
+<codeline lineno="26" refid="history_8h_1a643dbcabdf19780be261d54e12a8337f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="history_8h_1a643dbcabdf19780be261d54e12a8337f" kindref="member">hlibelle_type</ref>[100];</highlight></codeline>
+<codeline lineno="27" refid="history_8h_1ae03f971ee820f8f14dee149871565b0d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="history_8h_1ae03f971ee820f8f14dee149871565b0d" kindref="member">htarif_heure</ref>;</highlight></codeline>
+<codeline lineno="28" refid="history_8h_1a253e452fa36f707debb5c0f3e21fd36d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="history_8h_1a253e452fa36f707debb5c0f3e21fd36d" kindref="member">htarif_24</ref>;</highlight></codeline>
+<codeline lineno="29" refid="history_8h_1ac8f5cfce512f105e9c0756ffa25b2db6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="history_8h_1ac8f5cfce512f105e9c0756ffa25b2db6" kindref="member">hduree</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>callback_print_vehicles_count_h(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>callback_print_vehicles_h(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="history_8h_1a46729de1c2a66e0860c46894788ed9ba" kindref="member">history</ref>();</highlight></codeline>
+    </programlisting>
+    <location file="include/history.h"/>
+  </compounddef>
+</doxygen>

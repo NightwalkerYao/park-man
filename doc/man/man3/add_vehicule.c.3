@@ -1,0 +1,92 @@
+.TH "src/add_vehicule.c" 3 "Jeudi 29 Avril 2021" "Version 1.0.0" "Park-Man" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/add_vehicule.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <sqlite3\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include '\&.\&./include/sqlite3_client\&.h'\fP
+.br
+\fC#include '\&.\&./include/add_vehicule\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB_ADD_VEHICULE_\fP"
+.br
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBadd_vehicule\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBcount_types\fP = 0"
+.br
+.ti -1c
+.RI "int \fBlast_vehicle_id\fP"
+.br
+.ti -1c
+.RI "char \fBdate_arrivee\fP [21]"
+.br
+.ti -1c
+.RI "int \fBselected_vtype_id\fP"
+.br
+.ti -1c
+.RI "int \fBnbre_total_place\fP"
+.br
+.ti -1c
+.RI "int \fBplaces_dispo\fP"
+.br
+.ti -1c
+.RI "int \fBmutable\fP"
+.br
+.ti -1c
+.RI "char \fBselected_vtype_name\fP [160]"
+.br
+.in -1c
+.SH "Documentation des macros"
+.PP 
+.SS "#define _ADD_VEHICULE_"
+
+.SH "Documentation des fonctions"
+.PP 
+.SS "void add_vehicule ()"
+
+.SH "Documentation des variables"
+.PP 
+.SS "int count_types = 0"
+
+.SS "char date_arrivee[21]"
+
+.SS "int last_vehicle_id"
+
+.SS "int mutable"
+
+.SS "int nbre_total_place"
+
+.SS "int places_dispo"
+
+.SS "int selected_vtype_id"
+
+.SS "char selected_vtype_name[160]"
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Park-Man à partir du code source\&.

@@ -1,0 +1,91 @@
+.TH "src/sqlite3_client.c" 3 "Jeudi 29 Avril 2021" "Version 1.0.0" "Park-Man" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/sqlite3_client.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <sqlite3\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <ctype\&.h>\fP
+.br
+\fC#include '\&.\&./include/sqlite3_client\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB_SQLITE3_CLIENT_\fP"
+.br
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBclear_buffer\fP ()"
+.br
+.ti -1c
+.RI "char * \fBtrim\fP (char *str)"
+.br
+.ti -1c
+.RI "sqlite3 * \fBconnect\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const char * \fBDB_FILE\fP = '/home/nightwalker/Class/C_Adv/park\-man/Database\&.db'"
+.br
+.in -1c
+.SH "Documentation des macros"
+.PP 
+.SS "#define _SQLITE3_CLIENT_"
+
+.SH "Documentation des fonctions"
+.PP 
+.SS "void clear_buffer (void)"
+Nettoie le tampon apres un appel \fCscanf\fP 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIvoid\fP 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "sqlite3 * connect (void)"
+
+.PP
+\fBParamètres\fP
+.RS 4
+\fIvoid\fP 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+sqlite3* une instance de connexion SQLite3
+.RE
+.PP
+Teste la connectivite avec la base de donnees et affiche une alerte sur l'etat 
+.SS "char* trim (char * str)"
+
+.SH "Documentation des variables"
+.PP 
+.SS "const char * DB_FILE = '/home/nightwalker/Class/C_Adv/park\-man/Database\&.db'"
+Le chemin vers le fichier de base de donnees 
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Park-Man à partir du code source\&.
