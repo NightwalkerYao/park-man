@@ -1,0 +1,11 @@
+# Gestion d'un parking en C.
+- Trois types d'engins entre dans le parking : Voiture classique, camion,engin à deux roues.
+- Le parking a une entrée et une sortie, 
+- Le nombre de places disponibles est marqué à l'entrée du parking.
+- Lorsque le véhicule entre dans le parking on note l'heure d'entrée du véhicule.
+- le véhicule classique (voiture classique) est facturé à 500f l'heure,
+- Pour un stationnement de 24h le véhicule classique est facturé à 20mille f.
+- Lorsque les places pour les véhicules classiques sont toutes occupées le système propose pour les véhicules classics entrant d'utiliser une partie des places de stationnement pour les camions.
+- Le stationnement pour un camion est facturé à 700f l'heure
+- Pour un camion qui stationne 24h la facture est de 30mille f.
+- Les engins à deux roues sont facturés à 300f l'heure puis 10mille f pour 24h de stationnement.
